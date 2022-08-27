@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/css/output.css --build && npx tailwindcss -i ./src/input.css -o ./dist/css/output.css --watch"
+  },
+  "dependencies": {
+    "alpinejs": "^3.10.3",
+    "axios": "^0.27.2"
+  }
+}
