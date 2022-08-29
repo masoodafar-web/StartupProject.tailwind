@@ -842,7 +842,6 @@ video {
 .btn-neon-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(93 93 255 / var(--tw-bg-opacity));
-  padding: 1rem;
 }
 
 .btn-neon-blue:hover {
