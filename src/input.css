@@ -32,5 +32,5 @@
 }
 
 .btn-neon-blue{
- @apply bg-neon-blue hover:bg-neon-blue-hover
+ @apply bg-neon-blue hover:bg-neon-blue-hover p-4
 }
