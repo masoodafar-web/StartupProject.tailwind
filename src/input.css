@@ -2,9 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import url(https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;500;600;700;800;900&display=fallback); */
+
+*{
+   font-family: Inter,sans-serif
+}
 
 [x-cloak] { display: none !important; }
 
-.abs{
-    @apply absolute
+@keyframes fadeUp {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+    
+}
+.fade-up{
+    animation: fadeUp 1s ;
+    
+}
+
+.btn{
+  @apply px-4 py-2 flex items-center hover:cursor-pointer
+}
+
+.btn-neon-blue{
+ @apply bg-neon-blue hover:bg-neon-blue-hover
 }

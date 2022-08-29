@@ -11,6 +11,8 @@ module.exports = {
         'cadet-grey': '#9BA9B4',
         'alise-blue': '#D9E3EA',
         'neon-blue': '#5D5DFF',
+        'neon-blue-hover': '#4b4acf',
+        'medium-slate-blue': '#7070FF',
         'magenta-process': '#EA348F',
         'rose-bonbon': '#EC4899',
         'green-pigment': '#16A34A',
@@ -18,6 +20,7 @@ module.exports = {
   
       },
       container: {
+        padding: '2rem',
         screens: {
           'sm': '72rem',
           'md': '72rem',
