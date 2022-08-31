@@ -30,6 +30,12 @@ module.exports = {
       },
         center: true,
       },
+      scale: {
+        '101': '1.1',
+      },
+      letterSpacing: {
+        "m-wide": '.01em'
+      }
     },
   },
   plugins: [],
