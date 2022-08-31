@@ -1,8 +1,8 @@
 <div class="max-w-3xl w-full mx-auto space-y-8">
-    <h1 class="text-5xl font-extrabold" x-intersect="$el.classList.add('fade-up')">
+    <h1 class="text-5xl font-extrabold invisible" x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')">
         Landing template for startups
     </h1>
-    <p class="text-cadet-grey text-xl" x-intersect="$el.classList.add('fade-up')">Our landing page
+    <p class="text-cadet-grey text-xl invisible" x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')">Our landing page
         template works on all devices, so you only have to set
         it up once, and get beautiful results forever.</p>
 </div>
@@ -10,15 +10,15 @@
   <!--btn-->
    <div class="pt-8">
     <div class="flex gap-x-4 justify-center items-center text-md font-bold ">
-        <div class="btn btn-neon-blue" x-intersect="$el.classList.add('fade-up')">
+        <div class="btn btn-neon-blue invisible" x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')">
             Start free trial</div>
-        <div class="btn btn-gray anim-delay" x-intersect="$el.classList.add('fade-up')"> Learn more
+        <div class="btn btn-gray anim-delay invisible" x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"> Learn more
         </div>
     </div>
 </div>
 <!--video-->
 <div class="mt-16">
-    <div class=" flex justify-center items-center relative">
+    <div x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')" class="invisible flex justify-center items-center relative">
         <img src="../img/hero-image-01.jpg" alt="">
         <button class="absolute hover:opacity-75 " x-on:click="openModal=!open">
             <svg class="ic rz pv ph ho co cl cm " width="70px" height="70px" viewBox="0 0 88 88"
