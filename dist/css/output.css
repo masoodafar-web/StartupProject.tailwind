@@ -688,6 +688,10 @@ video {
   left: 2.25rem;
 }
 
+.left-\[395px\] {
+  left: 395px;
+}
+
 .z-50 {
   z-index: 50;
 }
