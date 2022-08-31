@@ -12,7 +12,7 @@
     <title>Home</title>
 </head>
 
-<body class="overflow-hidden bg-eerie-black">
+<body class="overflow-x-hidden bg-eerie-black">
     <section id="full" class=" min-h-screen text-white">
 
         <div class="container ">
@@ -70,8 +70,7 @@
                         <div class="hidden md:block">
                             <div class="flex gap-x-4 justify-end items-center ">
                                 <div class="px-3 text-neon-blue-hover hover:text-white">Sign In</div>
-                                <div
-                                    class="btn btn-neon-blue">
+                                <div class="btn btn-neon-blue">
                                     Sign Up</div>
                             </div>
                         </div>
@@ -86,18 +85,81 @@
                     </div>
                 </nav>
                 <!-- Landing -->
-                <div x-data=""  class="text-center mt-14 max-w-3xl mx-auto space-y-5" >
+                <div x-data="" class="text-center mt-14 max-w-3xl mx-auto space-y-5">
                     <h1 class="text-5xl font-bold" x-intersect="$el.classList.add('fade-up')">
                         Landing template for startups
                     </h1>
-                    <p class="text-cadet-grey text-xl" x-intersect="$el.classList.add('fade-up')">Our landing page template works on all devices, so you only have to set
+                    <p class="text-cadet-grey text-xl" x-intersect="$el.classList.add('fade-up')">Our landing page
+                        template works on all devices, so you only have to set
                         it up once, and get beautiful results forever.</p>
                 </div>
+
+
+                <!--btn-->
+                <div x-data="" class="pt-8">
+                    <div class="flex gap-x-4 justify-center items-center text-md font-bold ">
+                        <div class="btn btn-neon-blue" x-intersect="$el.classList.add('fade-in')">
+                            Start free trial</div>
+                        <div class="btn  btn-gray" x-intersect="$el.classList.add('fade-in')"> Learn more</div>
+                    </div>
+                </div>
+
+
+
+                <!--video-->
+                <div class="mt-10 relative ">
+                    <img src="../img/hero-image-01.jpg" alt="">
+                </div>
+                <div class="absolute bottom-56 left-2/4">
+                    <button class=" hover:opacity-75 " x-on:click="openModal=!open">
+                        <svg class="ic rz pv ph ho co cl cm " width="70px" height="70px" viewBox="0 0 88 88"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient x1="78.169%" y1="9.507%" x2="24.434%" y2="90.469%" id="a">
+                                    <stop stop-color="#EBF1F5" stop-opacity=".8" offset="0%"></stop>
+                                    <stop stop-color="#EBF1F5" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <circle fill="url(#a)" cx="44" cy="44" r="44"></circle>
+                            <path class="ae text-purple-600"
+                                d="M52 44a.999.999 0 00-.427-.82l-10-7A1 1 0 0040 37V51a.999.999 0 001.573.82l10-7A.995.995 0 0052 44V44c0 .001 0 .001 0 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!--openModal-->
+                <!-- <div id="openModal" x-show="openModal" class=" z-50 inset-0 fixed left-[390px] top-[266px]">
+                    
+                    <video controls class="w-[1100px] h-[600px] relative">
+                        <source src="../img/Typing On A Macbook from Pexels on Vimeo_files" type="video/mp4">
+                    </video>
+                    <div class=" block absolute bottom-[540px] left-9  rounded-md">
+                        <div class="bg-zinc-700 px-3 py-2"> <p   class="">Typing on a Macbook </p> </div>
+                        <div class="bg-zinc-700 px-3 py-2 mt-3"> <p class=>Pexels</p></div>
+                    </div>
+
+                </div> -->
+
+
+
+
+
+
+
+
+
+
 
             </section>
 
         </div>
     </section>
+
+
+
+
+
     <svg class="absolute top-0 -right-60 -z-10" width="722" height="320" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <linearGradient id="illustration-01" x1="-4.14" y1="43.12" x2="303.145" y2="391.913"
