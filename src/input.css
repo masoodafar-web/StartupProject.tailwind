@@ -5,37 +5,43 @@
 /* @import url(https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;500;600;700;800;900&display=fallback); */
 
 *{
-   font-family: Inter,sans-serif
+   font-family: Inter,sans-serif;
+   @apply text-white
 }
 
 [x-cloak] { display: none !important; }
 
+/* animation */
 @keyframes fadeUp {
+
     0%{
         opacity: 0;
         transform: translateY(100%);
     }
-    100%{
+     100%{
         opacity: 1;
         transform: translateY(0);
 
     }
     
 }
+
 .fade-up{
-    animation: fadeUp 1s ;
+    animation: fadeUp 1s;
     
 }
-
+.anim-delay{
+   animation-delay: 0.08s;
+}
 .btn{
-  @apply px-4 py-2 flex items-center hover:cursor-pointer
+  @apply px-6 py-3 flex items-center hover:cursor-pointer rounded-sm
 }
 
 .btn-neon-blue{
- @apply bg-neon-blue hover:bg-neon-blue-hover p-4 rounded-sm
+ @apply bg-neon-blue hover:bg-neon-blue-hover 
 }
 
 
 .btn-gray{
-  @apply bg-slate-700 hover:bg-gray-800 p-4 rounded-sm
+  @apply bg-slate-700 hover:bg-gray-800 rounded-sm
  }
