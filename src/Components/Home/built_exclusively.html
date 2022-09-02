@@ -17,7 +17,10 @@
 
         <!-- first colmun -->
         <div x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')" class="invisible items-center flex flex-col ">
-            <span x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/fcSvg.html')).data"></span>
+            <span x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/fcSvg.html')).data">
+
+                
+            </span>
             
 
             <h4 class="mb-2 text-2xl font-bold "><span class="text-cadet-grey">1</span>. Acquisition</h4>

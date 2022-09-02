@@ -31,6 +31,7 @@
 
             <!-- Landing -->
             <div class=" text-center mt-20" x-html="(await axios.get('Components/Home/landing.html')).data">
+
             </div>
 
           
@@ -41,13 +42,13 @@
         </section>
 
         <!-- workflow -->
-        <section id="workflow " x-init="$el.innerHTML=(await axios.get('Components/Home/Integratedworkflow.html',{headers:{'content-type':'text/html'}})).data"
+        <section id="workflow " x-init="$el.innerHTML=(await axios.get('Components/Home/Integratedworkflow.html')).data"
                  class="text-alise-blue max-w-3xl mx-auto ">
 
         </section>
 
     <!--produce -->
-    <section id="workflow " x-init="$el.innerHTML=(await axios.get('Components/Home/produce.html',{headers:{'content-type':'text/html'}})).data"
+    <section id="workflow " x-init="$el.innerHTML=(await axios.get('Components/Home/produce.html')).data"
     class="text-alise-blue max-w-3xl mx-auto ">
 
 </section>
