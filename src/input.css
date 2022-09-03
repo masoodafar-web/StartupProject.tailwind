@@ -45,3 +45,6 @@
 .btn-gray{
   @apply bg-slate-700 hover:bg-gray-800 rounded-sm
  }
+ /* #navbar_menu li{
+@apply hover:bg-cadet-grey
+ } */
