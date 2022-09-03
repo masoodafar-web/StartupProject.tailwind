@@ -48,3 +48,31 @@
  /* #navbar_menu li{
 @apply hover:bg-cadet-grey
  } */
+
+ @keyframes pulseLoop {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(4);
+    }
+ }
+
+ .pulse_loop{
+    animation: pulseLoop 8s infinite;
+    position: absolute;
+ }
+ .anim-delay-2{
+    animation-delay: -2s;
+ }
+ .anim-delay-4{
+    animation-delay: -4s;
+ }
+ .anim-delay-6{
+    animation-delay: -6s;
+ }
+ .anim-delay-8{
+    animation-delay: -8s;
+ }
