@@ -82,3 +82,10 @@
    @apply px-4 py-1 rounded-2xl text-xs;
  }
 
+ .btn-pricing{
+   @apply px-6 py-2 flex items-center hover:cursor-pointer rounded-sm
+ }
+ 
+ .btn-neon-blue-pricing{
+  @apply bg-neon-blue hover:bg-neon-blue-hover 
+ }

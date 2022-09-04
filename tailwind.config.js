@@ -25,6 +25,7 @@ module.exports = {
         'pantone-213c':'#f12f82',
         'pantone-7465c':'#3cbfae',
         'pantone-7473c':'#16a794',
+       'pantone-426c': '#25282c',
   
       },
       container: {
