@@ -46,13 +46,18 @@
             <section id="workflow "
                 x-init="$el.innerHTML=(await axios.get('Components/Home/Integratedworkflow.html')).data"
                 class="text-alise-blue max-w-3xl mx-auto ">
-
             </section>
 
-            <!--produce -->
-            <section id="workflow " x-init="$el.innerHTML=(await axios.get('Components/Home/produce.html')).data"
-                class="text-alise-blue max-w-3xl mx-auto ">
 
+            <!--produce -->
+            <section id="produce" x-init="$el.innerHTML=(await axios.get('Components/Home/produce.html')).data"
+                class=" ">
+            </section>
+
+
+            <!--News -->
+            <section id="News" x-init="$el.innerHTML=(await axios.get('Components/Home/News.html')).data"
+                class=" ">
             </section>
 
 

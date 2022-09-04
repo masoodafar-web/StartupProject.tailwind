@@ -17,6 +17,10 @@ module.exports = {
         'rose-bonbon': '#EC4899',
         'green-pigment': '#16A34A',
         'green-pantone': '#18B451',
+        'panton-266c':'#5d5dff',
+
+
+
   
       },
       container: {
