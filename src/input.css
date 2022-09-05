@@ -76,3 +76,9 @@
  .anim-delay-8{
     animation-delay: -8s;
  }
+ .text-footer-hover{
+  @apply text-cadet-grey cursor-pointer hover:text-white-grey  mb-1
+ }
+ .text-footer{
+   @apply text-white-grey font-medium mb-1
+ }

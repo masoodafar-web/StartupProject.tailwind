@@ -36,11 +36,13 @@
 
 
             </section>
+           
 
             <!-- built_exclusively -->
             <section id="built_exclusively"
                 x-init="$el.innerHTML=(await axios.get('Components/Home/built_exclusively.html')).data">
             </section>
+            
 
             <!-- workflow -->
             <section id="workflow "
@@ -54,6 +56,14 @@
                 class="text-alise-blue max-w-3xl mx-auto ">
 
             </section>
+             <!-- footer -->
+             <footer class="" x-init="$el.innerHTML=(await axios.get('Components/Home/footer.html')).data" >
+
+             </footer>
+
+            
+
+           
 
 
         </div>

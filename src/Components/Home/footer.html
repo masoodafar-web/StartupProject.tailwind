@@ -1,0 +1,112 @@
+<!-- Stay in -->
+<div class="bg-neon-blue  mx-auto   " x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')">
+
+    <div class="grid grid-cols-2 py-16 pl-12 z-20">
+        <!-- colmun one -->
+        <div class="">
+            <h3 class=" font-bold text-[2rem]  ">Stay in the loop</h3>
+            <p class="text-white-grey text-lg">Join our newsletter to get top news before anyone else.</p>
+        </div>
+        <!-- colmun two -->
+        <div class="relative flex items-center ">
+            <span class="absolute right-0 bottom-7"
+                x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/footer/skySvg.html')).data">
+            </span>
+
+            <div class="flex items-center z-50">
+                <input type="email" class=" outline-neon-blue-hover py-3 pl-4 pr-12 mr-2 border border-[#8D8DFF] bg-neon-blue-hover
+                     text-white rounded-sm " placeholder="Your best email…" aria-label="Your best email…">
+
+                <a class="bg-white-grey hover:bg-white text-neon-blue py-3 px-8 rounded-sm" href="#0">Subscribe</a>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+<!-- Final -->
+<div class="py-16">
+    <!-- content-footer -->
+    <div class="grid grid-cols-5  gap-x-16">
+        <div class="col-span-2">
+            <a class="cursor-pointer " href="#0"
+                x-init="$el.innerHTML=(await axios.get('Components/Svgs/logoSvg.html')).data"></a>
+
+            <p class="text-cadet-grey mt-3">Lorem ipsum is placeholder text commonly used in the graphic, print, and
+                publishing industries for previewing layouts and visual mockups.</p>
+        </div>
+        <div class="text-sm ">
+            <h6 class="text-footer ">Products</h6>
+            <p class=" text-footer-hover">Web Studio</p>
+            <p class=" text-footer-hover">DynamicBox Flex</p>
+            <p class=" text-footer-hover">Programming Forms</p>
+        </div>
+        <div class="text-sm">
+            <h6 class="text-footer ">Resources</h6>
+            <p class=" text-footer-hover">Nostrud exercitation</p>
+            <p class=" text-footer-hover">Visual mockups</p>
+            <p class=" text-footer-hover">Nostrud exercitation</p>
+            <p class=" text-footer-hover">Visual mockups</p>
+            <p class=" text-footer-hover">Nostrud exercitation</p>
+        </div>
+        <div class="text-sm">
+            <h6 class="text-footer ">Company</h6>
+            <p class=" text-footer-hover">Consectetur adipiscing</p>
+            <p class=" text-footer-hover">Labore et dolore</p>
+            <p class=" text-footer-hover">Consectetur adipiscing</p>
+            <p class=" text-footer-hover">Labore et dolore</p>
+            <p class=" text-footer-hover">Consectetur adipiscing</p>
+        </div>
+    </div>
+    <!-- social-footer -->
+    <div class="flex  mt-16 justify-between">
+        <p class="text-cadet-grey text-sm ">© Cruip.com. All rights reserved.</p>
+        <div class="">
+            <ul class="flex">
+                <!-- twitter -->
+                <li class="">
+                    <a class=" bg-raisin-black hover:bg-neon-blue flex items-center justify-center rounded-full "
+                        href="#0"
+                        x-init="$el.innerHTML=(await axios.get('Components/home/Svgs/footer/twitSvg.html')).data"></a>
+
+                </li>
+                <!-- Github -->
+                <li class="ml-4">
+                    <a class="bg-raisin-black hover:bg-neon-blue flex items-center justify-center rounded-full "
+                        href="#0"
+                        x-init="$el.innerHTML=(await axios.get('Components/home/Svgs/footer/GitSvg.html')).data"></a>
+
+                </li>
+                <!-- Facebook -->
+                <li class="ml-4">
+                    <a class="bg-raisin-black hover:bg-neon-blue flex items-center justify-center rounded-full "
+                        href="#0"
+                        x-init="$el.innerHTML=(await axios.get('Components/home/Svgs/footer/FaceSvg.html')).data"></a>
+
+                </li>
+                <!-- instagram -->
+                <li class="ml-4">
+                    <a class="bg-raisin-black hover:bg-neon-blue flex items-center justify-center rounded-full "
+                        href="#0"
+                        x-init="$el.innerHTML=(await axios.get('Components/home/Svgs/footer/instaSvg.html')).data"></a>
+
+                </li>
+                <!-- Linkdin -->
+                <li class="ml-4">
+                    <a class="bg-raisin-black hover:bg-neon-blue flex items-center justify-center rounded-full "
+                        href="#0"
+                        x-init="$el.innerHTML=(await axios.get('Components/home/Svgs/footer/inSvg.html')).data"></a>
+
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+</div>
