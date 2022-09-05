@@ -2,7 +2,7 @@
 <div class="text-center font-bold max-w-3xl mx-auto pb-20">
 
     <h2 x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
-        class="text-white text-[2.5rem] mb-4 invisible">
+        class="text-white-grey text-[2.5rem] mb-4 invisible">
         Built exclusively for you
     </h2>
     <p x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
@@ -14,7 +14,7 @@
 </div>
 
 <!-- home-content-second -->
-<div class="grid grid-cols-3 gap-x-8 border-b border-cadet-grey pb-20 ">
+<div class="grid grid-cols-3 mx-auto gap-x-8 border-b border-cadet-grey pb-20 ">
 
     <!-- first colmun -->
     <div x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
@@ -25,7 +25,7 @@
         </span>
 
 
-        <h4 class="mb-2 text-2xl font-bold "><span class="text-cadet-grey">1</span>. Acquisition</h4>
+        <h4 class="text-white-grey mb-2 text-2xl font-bold "><span class="text-cadet-grey">1</span>. Acquisition</h4>
         <p class="text-lg text-cadet-grey text-center">Duis aute irure dolor in reprehenderit in
             voluptate velit esse cillum dolore
             eu fugiat nulla pariatur.
@@ -36,7 +36,7 @@
         class="invisible items-center flex flex-col ">
         <span x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/scSvg.html')).data"></span>
 
-        <h4 class="mb-2 text-2xl font-bold "><span class="text-cadet-grey">2</span>. Activation</h4>
+        <h4 class="text-white-grey mb-2 text-2xl font-bold "><span class="text-cadet-grey">2</span>. Activation</h4>
         <p class="text-lg text-cadet-grey text-center">Duis aute irure dolor in reprehenderit in
             voluptate velit esse cillum dolore
             eu fugiat nulla pariatur.
@@ -47,7 +47,7 @@
         class="invisible items-center flex flex-col ">
         <span x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/tcSvg.html')).data"></span>
 
-        <h4 class="mb-2 text-2xl font-bold "><span class="text-cadet-grey">3</span>. Retention</h4>
+        <h4 class="text-white-grey mb-2 text-2xl font-bold "><span class="text-cadet-grey">3</span>. Retention</h4>
         <p class="text-lg text-cadet-grey text-center">Duis aute irure dolor in reprehenderit in
             voluptate velit esse cillum dolore
             eu fugiat nulla pariatur.
@@ -58,85 +58,98 @@
 
 <!-- Light fast -->
 <section>
-    <div class="grid grid-cols-2  py-20 border-b border-cadet-grey">
+    <div class="grid grid-cols-2 mx-auto  py-20 border-b border-cadet-grey">
         <!-- colmun 1 -->
-        <div class="py-20 pr-24 " x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')">
-            <p class="text-xl text-neon-blue  mb-2 font-Ar">Lighting fast workflow</p>
-            <h3 class="text-[2rem] mb-3   ">Say hello to research data</h3>
+        <div class="py-20 pr-16 " x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')">
+            <p class="text-xl text-neon-blue  mb-2 font-Ar" style="font-family:Architects Daughter">Lighting fast
+                workflow</p>
+            <h3 class="text-white-grey font-bold text-[2rem] mb-3   ">Say hello to research data</h3>
             <p class="text-xl mb-4 text-cadet-grey">Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-            <div class="text-cadet-grey text-xl flex">
+            <div class=" text-lg flex">
                 <ul class="flex gap-3 w-full flex-wrap">
                     <li class="flex items-center  ">
-                        <span class="mr-1" x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
-                           
+                        <span class="mr-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+
                         </span>
 
                         <span class="text-cadet-grey">Premium statistics</span>
                     </li>
                     <li class="flex items-center  ">
-                        <span class="mr-1" x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
-                           
+                        <span class="mr-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+
                         </span>
 
                         <span class="text-cadet-grey">Unlimited jobs</span>
                     </li>
                     <li class="flex items-center  ">
-                        <span class="mr-1" x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
-                           
+                        <span class="mr-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+
                         </span>
 
                         <span class="text-cadet-grey">Free goods</span>
                     </li>
                     <li class="flex items-center  ">
-                        <span class="mr-1" x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
-                           
+                        <span class="mr-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+
                         </span>
 
                         <span class="text-cadet-grey">No code required</span>
                     </li>
                     <li class="flex items-center  ">
-                        <span class="mr-1" x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
-                           
+                        <span class="mr-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+
                         </span>
 
                         <span class="text-cadet-grey">Always up to date</span>
                     </li>
-                    <li class="flex items-center  ">
-                        <span class="mr-1" x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
-                           
-                        </span>
 
-                        <span class="text-cadet-grey">Premium statistics</span>
-                    </li>
-                </ul>
 
             </div>
-            <div class="flex  mt-10 mb-4 ">
+            <div class=" mt-7 mb-4 ">
                 <div class=" flex items-center ">
-                    <img src="../img/features-avatar.jpg"  class="w-10 h-10 rounded-full " alt="Feature avatar">
-                    <p class="text-cadet-grey italic ml-2">"Lorem ipsum is placeholder text commonly used in the
+                    <img src="../img/features-avatar.jpg" class="w-10 h-10 rounded-full " alt="Feature avatar">
+                    <p class="text-cadet-grey italic ml-4">"Lorem ipsum is placeholder text commonly used in the
                         graphic, print, and
                         publishing."
                     </p>
+
+                </div>
+                <div class="flex mt-3 ml-12">
+                    <span class=""
+                        x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/mineSvg.html')).data"></span>
+                    <p class="text-white-grey mr-1">Anastasia Dan</p>
+                    <span class="text-gray-700 ">-</span>
+                    <a class="text-neon-blue hover:text-white-grey hover:cursor-pointer ml-1 " href="#0">UX Board</a>
                 </div>
 
+
+
+
             </div>
-           
+
+
+
         </div>
 
         <!-- colmun 2 -->
-        <div x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')" class="invisible flex justify-center items-center">
+        <div x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
+            class="invisible flex justify-center items-center">
             <span>
                 <img src="../img/features-illustration.png" alt="Features illustration">
             </span>
 
             <div class="absolute flex ">
-<div class="w-16 h-16 rounded-full bg-neon-blue pulse_loop "></div>
-<div class="w-16 h-16 rounded-full bg-neon-blue pulse_loop anim-delay-2"></div>
-<div class="w-16 h-16 rounded-full bg-neon-blue pulse_loop anim-delay-4"></div>
-<div class="w-16 h-16 rounded-full bg-neon-blue pulse_loop anim-delay-6"></div>
-<div class="w-16 h-16 rounded-full bg-neon-blue pulse_loop anim-delay-8"></div>
+                <div class="w-16 h-16 rounded-full bg-neon-blue pulse_loop "></div>
+                <div class="w-16 h-16 rounded-full bg-neon-blue pulse_loop anim-delay-2"></div>
+                <div class="w-16 h-16 rounded-full bg-neon-blue pulse_loop anim-delay-4"></div>
+                <div class="w-16 h-16 rounded-full bg-neon-blue pulse_loop anim-delay-6"></div>
+                <div class="w-16 h-16 rounded-full bg-neon-blue pulse_loop anim-delay-8"></div>
             </div>
         </div>
 
