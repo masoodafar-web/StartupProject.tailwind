@@ -1,0 +1,18 @@
+﻿
+<div  x-data="{showMenu:false}" class="flex justify-between gap-x-2 h-20 items-center relative ">
+    <div x-on:click="home=true,pricing=false,features=false" class="flex justify-start" x-init="$el.innerHTML=(await axios.get('Components/Shared/Svgs/logoSvg.html')).data">
+       
+    </div>
+   <div class="hidden md:block" x-init="$el.innerHTML=(await axios.get('Components/Shared/menus.html')).data">
+
+   </div>
+    <div class="hidden md:block"  x-init="$el.innerHTML=(await axios.get('Components/Shared/singinSingup.html')).data">
+     
+    </div>
+    <div class="block md:hidden" x-on:click="showMenu=!showMenu" x-init="$el.innerHTML=(await axios.get('Components/Shared/Svgs/responsiveMenuSvg.html')).data">
+   
+    </div>
+    <div x-cloak x-show="showMenu" class="block md:hidden absolute w-full p-5  font-normal bg-raisin-black top-16 " x-init="$el.innerHTML=(await axios.get('Components/Shared/menus.html')).data">
+        
+    </div>
+</div>

@@ -1,34 +1,63 @@
-<div class="text-center my-14">
-    <p x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')" class="invisible text-4xl font-bold m-0 px-10 mb-5 ">
-        Integrated workflow designed for product teams
-    </p>
-    <p x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')" class="invisible text-cadet-grey text-xl px-5">
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum —
-        semper quis lectus nulla.
-    </p>
+<div class="max-w-3xl mx-auto">
+
+    <div class="text-center my-14">
+        <p x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
+            class="invisible text-4xl font-bold m-0 px-10 mb-5 ">
+            Integrated workflow designed for product teams
+        </p>
+        <p x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
+            class="invisible text-cadet-grey text-xl px-5">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum —
+            semper quis lectus nulla.
+        </p>
+    </div>
+
+    <div x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
+        class="invisible  grid grid-flow-row grid-cols-5 gap-3">
+        <div x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/Integratedworkflow/svg1.html')).data"
+            class="flex items-center bg-raisin-black focus:bg-slate-400 p-3 justify-center gap-2 text-cadet-grey rounded-3xl hover:text-alise-blue hover:cursor-pointer ">
+
+            <!--        //svg1-->
+        </div>
+        <div x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/Integratedworkflow/svg2.html')).data"
+            class="flex items-center bg-raisin-black p-3 justify-center gap-2 text-cadet-grey rounded-3xl hover:text-alise-blue hover:cursor-pointer">
+
+            <!--        svg2-->
+        </div>
+        <div x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/Integratedworkflow/svg3.html')).data"
+            class="flex items-center bg-raisin-black p-3 justify-center gap-2 text-cadet-grey rounded-3xl hover:text-alise-blue hover:cursor-pointer">
+            <!--       svg3-->
+        </div>
+        <div x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/Integratedworkflow/svg4.html')).data"
+            class="flex items-center bg-raisin-black p-3 justify-center gap-2 text-cadet-grey rounded-3xl hover:text-alise-blue hover:cursor-pointer">
+            <!--  svg4-->
+        </div>
+        <div x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/Integratedworkflow/svg5.html')).data"
+            class="flex items-center bg-raisin-black p-3 justify-center gap-2 text-cadet-grey rounded-3xl hover:text-alise-blue hover:cursor-pointer">
+            <!--      svg5-->
+        </div>
+    </div>
 </div>
 
-<div x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')" class="invisible  grid grid-flow-row grid-cols-5 gap-3">
-    <div x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/Integratedworkflow/svg1.html')).data"
-            class="flex items-center bg-raisin-black focus:bg-slate-400 p-3 justify-center gap-2 text-cadet-grey rounded-3xl hover:text-alise-blue hover:cursor-pointer ">
-       
-<!--        //svg1-->
+<!-- Optimize Card -->
+<div class="w-full bg-raisin-black grid  grid-cols-12  mt-10 ">
+    <!-- text -->
+    <div class="col-span-12 sm:col-span-8 md:col-span-7 lg:col-span-6 flex flex-col justify-center px-5 gap-y-4 py-5 order-2  sm:order-1">
+        <h2 class="text-xl text-white-grey font-bold">Optimize and scale, easy to start</h2>
+        <p class="text-cadet-grey">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur.
+        </p>
+        <span class="btn btn-neon-blue gap-x-1 w-fit">
+            <span>Learn More </span>
+            <span
+                x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/Integratedworkflow/arrowLeft.html')).data"></span>
+
+        </span>
     </div>
-    <div x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/Integratedworkflow/svg2.html')).data"
-            class="flex items-center bg-raisin-black p-3 justify-center gap-2 text-cadet-grey rounded-3xl hover:text-alise-blue hover:cursor-pointer">
-   
-<!--        svg2-->
-    </div>
-    <div x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/Integratedworkflow/svg3.html')).data"
-            class="flex items-center bg-raisin-black p-3 justify-center gap-2 text-cadet-grey rounded-3xl hover:text-alise-blue hover:cursor-pointer">
-<!--       svg3-->
-    </div>
-    <div x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/Integratedworkflow/svg4.html')).data"
-            class="flex items-center bg-raisin-black p-3 justify-center gap-2 text-cadet-grey rounded-3xl hover:text-alise-blue hover:cursor-pointer">
-<!--  svg4-->
-    </div>
-    <div x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/Integratedworkflow/svg5.html')).data"
-            class="flex items-center bg-raisin-black p-3 justify-center gap-2 text-cadet-grey rounded-3xl hover:text-alise-blue hover:cursor-pointer">
-<!--      svg5-->
+<!-- img -->
+    <div class="col-span-12 sm:col-span-4 md:col-span-5 lg:col-span-6 order-1 sm:order-2 bg-cover min-h-[25rem]" style="background-image:url('/dist/img/home/tabs-image-01.jpg') ;">
     </div>
 </div>

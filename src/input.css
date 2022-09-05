@@ -34,7 +34,7 @@
    animation-delay: 0.08s;
 }
 .btn{
-  @apply px-6 py-3 flex items-center hover:cursor-pointer rounded-sm
+  @apply px-6 py-3 flex items-center hover:cursor-pointer rounded-sm w-fit
 }
 
 .btn-neon-blue{
@@ -94,4 +94,12 @@
  }
  .text-footer{
    @apply text-white-grey font-medium mb-1
+ }
+
+ 
+ .line-exclusively{
+   left: calc(50% + 42px);
+    width: calc(100% - 53px);
+    top: 26px;
+
  }

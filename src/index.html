@@ -13,70 +13,47 @@
     <title>Home</title>
 </head>
 
-<body class="bg-eerie-black" x-data="">
+<body class="bg-eerie-black" x-data="{home:true,pricing:false,features:false}">
     <section x-data="" id="full" class="overflow-x-hidden relative min-h-screen ">
 
-        <div x-html="(await axios.get('Components/backgroundSVG.html')).data">
-
+        <!-- Layout Svg -->
+        <div x-html="(await axios.get('Components/Shared/backgroundSVG.html')).data">
         </div>
 
-        <div class="container space-y-40">
-            <!-- <p class="h-[3000px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dignissimos dolor eligendi, sit, debitis alias veniam distinctio quam facilis facere mollitia. Placeat architecto non quis id, labore cum. A, delectus.</p> -->
+        <section class="container ">
             <!-- header -->
             <section id="header">
                 <!-- navbar -->
-                <nav class="w-full font-bold text-cadet-grey" x-html="(await axios.get('Components/navbar.html')).data">
-
+                <nav class="w-full font-bold text-cadet-grey"
+                    x-html="(await axios.get('Components/Shared/navbar.html')).data">
                 </nav>
-
-                <!-- Landing -->
-                <div class=" text-center mt-20" x-html="(await axios.get('Components/Home/landing.html')).data">
-
-                </div>
-
-
-            </section>
-           
-
-            <!-- built_exclusively -->
-            <section id="built_exclusively"
-                x-init="$el.innerHTML=(await axios.get('Components/Home/built_exclusively.html')).data">
-            </section>
-            
-
-            <!-- workflow -->
-            <section id="workflow "
-                x-init="$el.innerHTML=(await axios.get('Components/Home/Integratedworkflow.html')).data"
-                class="text-alise-blue max-w-3xl mx-auto ">
             </section>
 
 
-            <!--produce -->
-            <section id="produce" x-init="$el.innerHTML=(await axios.get('Components/Home/produce.html')).data"
-                class=" ">
-            </section>
-             <!-- footer -->
-             <footer class="" x-init="$el.innerHTML=(await axios.get('Components/Home/footer.html')).data" >
+            <!-- Content -->
+            <template x-if="home">
+                <main class="space-y-32" x-html="(await axios.get('Page/home.html')).data">
 
-             </footer>
+                </main>
+            </template>
 
-            
+            <template x-if="pricing">
+                <main class="space-y-32" x-html="(await axios.get('Page/pricing.html')).data">
 
-           
+                </main>
+            </template>
 
+            <template x-if="features">
+                <main class="space-y-32" x-html="(await axios.get('Page/features.html')).data">
 
-            <!--News -->
-            <section id="News" x-init="$el.innerHTML=(await axios.get('Components/Home/News.html')).data"
-                class=" ">
-            </section>
+                </main>
+            </template>
 
+            <!-- footer -->
+            <footer class="" x-init="$el.innerHTML=(await axios.get('Components/Shared/footer.html')).data">
 
-            <!--pricing -->
-            <section id="pricing" x-init="$el.innerHTML=(await axios.get('Components/Home/pricing.html')).data"
-                class=" ">
-            </section>
-
-        </div>
+            </footer>
+        </section>
 
 
     </section>

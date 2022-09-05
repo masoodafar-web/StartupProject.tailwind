@@ -1,8 +1,8 @@
     <ul id="navbar_menu" class="flex flex-col md:flex-row gap-x-8 lg:gap-x-9 md:items-center space-y-5 md:space-y-0">
-        <li>
+        <li x-on:click="features=true,home=false,pricing=false">
             Features
         </li>
-        <li>
+        <li x-on:click="pricing=true,home=false,features=false">
             Pricing
         </li>
         <li>
@@ -13,21 +13,21 @@
         </li>
         <li x-data="{supportShow:false}" class="relative md:h-10 md:flex  items-center md:py-0 py-3 border-t border-cadet-grey md:border-t-0"
             x-on:mouseleave="supportShow=false" x-on:mouseover="supportShow=true">
-                                <span class="flex gap-x-2 items-center" x-init="$el.innerHTML=(await axios.get('Components/Svgs/arrowDownSvg.html')).data">
+                                <span class="flex gap-x-2 items-center" x-init="$el.innerHTML=(await axios.get('Components/Shared/Svgs/arrowDownSvg.html')).data">
                                   
                                 </span>
             <!-- Support DropDown -->
-            <div x-cloak x-show="supportShow"  x-init="$el.innerHTML=(await axios.get('Components/dropdownSupport.html')).data"
+            <div x-cloak x-show="supportShow"  x-init="$el.innerHTML=(await axios.get('Components/Shared/dropdownSupport.html')).data"
                  class="bg-raisin-black p-4 hidden md:block absolute right-0 top-8 w-40 font-medium text-cadet-grey" >
              
             </div>
              <!-- Support DropDown -->
-             <div   x-init="$el.innerHTML=(await axios.get('Components/dropdownSupport.html')).data"
+             <div   x-init="$el.innerHTML=(await axios.get('Components/Shared/dropdownSupport.html')).data"
              class="bg-raisin-black p-4 block md:hidden font-medium text-cadet-grey" >
          
         </div>
         </li>
-        <li class="block md:hidden py-3 border-t border-cadet-grey" x-init="$el.innerHTML=(await axios.get('Components/singinSingup.html')).data">
+        <li class="block md:hidden py-3 border-t border-cadet-grey" x-init="$el.innerHTML=(await axios.get('Components/Shared/singinSingup.html')).data">
 
         </li>
     </ul>
