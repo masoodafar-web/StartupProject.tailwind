@@ -6,33 +6,12 @@
 
 *{
    font-family: Inter,sans-serif;
-   @apply text-white
+   @apply text-white-grey
 }
 
 [x-cloak] { display: none !important; }
 
-/* animation */
-@keyframes fadeUp {
 
-    0%{
-        opacity: 0;
-        transform: translateY(100%);
-    }
-     100%{
-        opacity: 1;
-        transform: translateY(0);
-
-    }
-    
-}
-
-.fade-up{
-    animation: fadeUp 1s;
-    
-}
-.anim-delay{
-   animation-delay: 0.08s;
-}
 .btn{
   @apply px-6 py-3 flex items-center hover:cursor-pointer rounded-sm w-fit
 }
@@ -47,8 +26,9 @@
  }
  /* #navbar_menu li{
 @apply hover:bg-cadet-grey
- } */
+} */
 
+/* ------------------------------------animation------------------------------------------------------ */ 
  @keyframes pulseLoop {
     0%{
         opacity: 1;
@@ -59,7 +39,61 @@
         transform: scale(4);
     }
  }
+/* animation */
+@keyframes fadeUp {
 
+   0%{
+       opacity: 0;
+       transform: translateY(100%);
+   }
+    100%{
+       opacity: 1;
+       transform: translateY(0);
+
+   }
+   
+}
+@keyframes fadeltr {
+
+   0%{
+       opacity: 0;
+       transform: translatex(-50%);
+   }
+    100%{
+       opacity: 1;
+       transform: translatex(0);
+
+   }
+   
+}
+@keyframes fadertl {
+
+   0%{
+       opacity: 0;
+       transform: translatex(50%);
+   }
+    100%{
+       opacity: 1;
+       transform: translatex(0);
+
+   }
+   
+}
+.fade-up{
+   animation: fadeUp 1s;
+   
+}
+.fade-ltr{
+   animation: fadeltr 1s;
+   
+}
+.fade-rtl{
+   animation: fadertl 1s;
+   
+}
+.anim-delay{
+  animation-delay: 0.08s;
+}
  .pulse_loop{
     animation: pulseLoop 8s infinite;
     position: absolute;
@@ -76,7 +110,7 @@
  .anim-delay-8{
     animation-delay: -8s;
  }
-
+/* ------------------------------------animation------------------------------------------------------ */
 
  .btn-news{
    @apply px-4 py-1 rounded-2xl text-xs;
@@ -103,3 +137,18 @@
     top: 26px;
 
  }
+ .border-bottom-raisin-black{
+  @apply border-b-raisin-black  border-b pb-10
+ }
+
+ .font-arch-daug{
+   font-family: Architects Daughter !important;
+ }
+
+ .news-img-div-scalable{
+     @apply mb-5 hover:cursor-pointer overflow-hidden w-full h-48
+ 
+  }
+ .news-img-img-scalable{
+   @apply hover:scale-125 hover:opacity-50 transition-all
+}
