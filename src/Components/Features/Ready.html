@@ -1,0 +1,29 @@
+<!--Ready-->
+<section  id="Ready" class="">
+    <div class="max-w-3xl w-full mx-auto space-y-8 text-center mt-20">
+        <h1 class="font-features invisible"
+            x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')">Ready to create better
+            products?
+        </h1>
+        <p class="text-cadet-grey text-xl invisible"
+            x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')">Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consequat.</p>
+
+        <div class="flex gap-x-4 justify-center items-center text-md font-bold ">
+            <div class="btn btn-neon-blue invisible"
+                x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')">
+                Start free trial</div>
+        </div>
+        <div class="">
+            <ul class="flex  gap-x-8 justify-center">
+                <li class="flex ">
+                    <span x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data" class="mt-1"></span>
+                     Free 14-day trial</li>
+                <li class="flex" ><span x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data" class="mt-1"></span> Unlimited users</li>
+                <li class="flex"><span x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data" class="mt-1"></span> Volume discounts</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>

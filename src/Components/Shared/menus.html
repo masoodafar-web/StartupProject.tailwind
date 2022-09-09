@@ -5,12 +5,13 @@
         <li x-on:click="pricing=true,home=false,features=false">
             Pricing
         </li>
-        <li>
+        <li x-on:click="blog=true,home=false,features=false,pricing=false">
             Blog
         </li>
-        <li>
+        <li x-on:click="About=true,home=false,features=false,pricing=false,blog=false">
             About us
         </li>
+
         <li x-data="{supportShow:false}" class="relative md:h-10 md:flex  items-center md:py-0 py-3 border-t border-cadet-grey md:border-t-0"
             x-on:mouseleave="supportShow=false" x-on:mouseover="supportShow=true">
                                 <span class="flex gap-x-2 items-center" x-init="$el.innerHTML=(await axios.get('Components/Shared/Svgs/arrowDownSvg.html')).data">

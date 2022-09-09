@@ -1,10 +1,15 @@
+
+
+<!--product -->
+<section id="product" x-init="$el.innerHTML=(await axios.get('Components/Features/product.html')).data" class=" ">
+</section>
+
 <!-- Integratedworkflow -->
 <section id="Integratedworkflow"
     x-init="$el.innerHTML=(await axios.get('Components/Features/Integratedworkflow.html')).data">
-
 </section>
 
-<!--produce -->
-<section id="produce" x-init="$el.innerHTML=(await axios.get('Components/Features/produce.html')).data"
-    class=" ">
+<!-- Ready -->
+<section id="Ready"
+    x-init="$el.innerHTML=(await axios.get('Components/Features/Ready.html')).data">
 </section>

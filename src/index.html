@@ -13,7 +13,7 @@
     <title>Home</title>
 </head>
 
-<body class="bg-eerie-black" x-data="{home:true,pricing:false,features:false}">
+<body class="bg-eerie-black" x-data="{home:true,pricing:false,features:false,blog:false}">
     <section x-data="" id="full" class="overflow-x-hidden relative min-h-screen ">
 
         <!-- Layout Svg -->
@@ -48,7 +48,18 @@
 
                 </main>
             </template>
+            <template x-if="blog">
+                <main class="space-y-24" x-html="(await axios.get('Page/blog.html')).data">
 
+                </main>
+            </template>
+            <template x-if="About">
+                <main class="space-y-24" x-html="(await axios.get('Page/About.html')).data">
+
+                </main>
+            </template>
+
+            
             <!-- footer -->
             <footer class="" x-init="$el.innerHTML=(await axios.get('Components/Shared/footer.html')).data">
 
