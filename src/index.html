@@ -53,13 +53,14 @@
 
                 </main>
             </template>
-            <template x-if="About">
-                <main class="space-y-24" x-html="(await axios.get('Page/About.html')).data">
+
+            <template x-if="about">
+                <main class="space-y-24" x-html="(await axios.get('Page/about.html')).data">
 
                 </main>
             </template>
 
-            
+
             <!-- footer -->
             <footer class="" x-init="$el.innerHTML=(await axios.get('Components/Shared/footer.html')).data">
 
