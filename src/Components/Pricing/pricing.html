@@ -14,53 +14,57 @@
 
     <!--card-->
     <div id="card" class="text-gray-400 my-10  ">
-        <div class="grid grid-cols-1 md:grid-cols-3  ">
+        <div id="card-grid" class="grid grid-cols-1 md:grid-cols-3  ">
 
-            <div class="bg-pantone-426c p-4 space-y-3 mx-3 h-[550px]">
-                <h1 class="text-pantone-266c text-xl font-bold pt-3">Essential</h1>
-                <div class="">
-                    <span class=" text-3xl font-bold  text-gray-500">$</span>
-                    <span class="text-4xl font-bold">49</span>
-                    <span class="text-xl  text-gray-500">/mo</span>
+            <div class=" p-4   mx-3 min-h-[550px] flex flex-col justify-between">
+                <div class="space-y-3">
+                    <h1 class="text-pantone-266c text-xl font-bold pt-3">Essential</h1>
+                    <div class="">
+                        <span class=" text-3xl font-bold  text-gray-500">$</span>
+                        <span class="text-4xl font-bold">49</span>
+                        <span class="text-xl  text-gray-500">/mo</span>
+                    </div>
+                    <p class=" text-gray-400 border-b border-gray-700  pb-4 ">Better insights for growing businesses that
+                        want more customers.</p>
+                    <ul class="space-y-4">
+                        <li class="px-2 text-white font-bold text-base">Features include:</li>
+    
+                        <li class=" flex items-start "><span class="mt-1"
+                                x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                            </span>
+                            <span class="text-cadet-grey">50 Placeholder text commonly</span>
+                        </li>
+                        <li class=" flex items-start "><span class="mt-1"
+                                x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                            </span>
+                            <span class=" text-cadet-grey">Consectetur adipiscing elit</span>
+                        </li>
+                        <li class=" flex items-start "><span class="mt-1"
+                                x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                            </span>
+                            <span class="text-cadet-grey">Excepteur sint occaecat cupidatat</span>
+                        </li>
+                        <li class=" flex items-start "><span class="mt-1"
+                                x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                            </span>
+                            <span class="text-cadet-grey">Officia deserunt mollit anim</span>
+                        </li>
+    
+                    </ul>
                 </div>
-                <p class=" text-gray-400 border-b border-gray-700  pb-4 ">Better insights for growing businesses that
-                    want more customers.</p>
-                <ul class="space-y-4">
-                    <li class="px-2 text-white font-bold text-base">Features include:</li>
-
-                    <li class=" flex items-start "><span class="mt-1"
-                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
-                        </span>
-                        <span class="text-cadet-grey">50 Placeholder text commonly</span>
-                    </li>
-                    <li class=" flex items-start "><span class="mt-1"
-                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
-                        </span>
-                        <span class=" text-cadet-grey">Consectetur adipiscing elit</span>
-                    </li>
-                    <li class=" flex items-start "><span class="mt-1"
-                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
-                        </span>
-                        <span class="text-cadet-grey">Excepteur sint occaecat cupidatat</span>
-                    </li>
-                    <li class=" flex items-start "><span class="mt-1"
-                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
-                        </span>
-                        <span class="text-cadet-grey">Officia deserunt mollit anim</span>
-                    </li>
-
-                </ul>
+               
                 <div class=" mb-1">
-                    <div class="btn-pricing btn-neon-blue-pricing  justify-center "> Start free trial</div>
+                    <div class="pricing-btn"> Start free trial</div>
                 </div>
             </div>
 
-            <div class="bg-pantone-426c p-4 space-y-3 mx-3 h-[550px] relative">
+            <div class=" p-4 mx-3 min-h-[550px] relative flex flex-col justify-between">
                 <span
                     class="text-center text-xs bg-green-200 text-green-600 right-3 -top-3  rounded-3xl  px-3 py-1 absolute">Most
                     popular
                 </span>
-                <h1 class="text-pantone-266c text-xl font-bold pt-3">Premium</h1>
+                <div class="space-y-3">
+                    <h1 class="text-pantone-266c text-xl font-bold pt-3">Premium</h1>
                 <div class="">
                     <span class=" text-3xl font-bold  text-gray-500">$</span>
                     <span class="text-4xl font-bold">79</span>
@@ -97,12 +101,14 @@
                     </li>
 
                 </ul>
+                </div>
                 <div class="mb-1">
-                    <div class="btn-pricing btn-neon-blue-pricing justify-center"> Start free trial</div>
+                    <div class="pricing-btn"> Start free trial</div>
                 </div>
             </div>
 
-            <div class="bg-pantone-426c p-4 space-y-3 mx-3 h-[550px]">
+            <div class=" p-4  mx-3 min-h-[550px] flex flex-col justify-between">
+            <div class="space-y-3">
                 <h1 class="text-pantone-266c text-xl font-bold pt-3">Advanced</h1>
                 <div class="">
                     <span class=" text-3xl font-bold  text-gray-500">$</span>
@@ -144,8 +150,9 @@
                         <span class=" text-cadet-grey">Placeholder text commonly used</span>
                     </li>
                 </ul>
+            </div>
                 <div class="mb-1">
-                    <div class="btn-pricing btn-neon-blue-pricing justify-center "> Start free trial</div>
+                    <div class="pricing-btn"> Start free trial</div>
                 </div>
             </div>
         </div>

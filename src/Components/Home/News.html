@@ -4,14 +4,14 @@
 <section id="News " class="mt-10  ">
 
     <div class=" max-w-3xl  mx-auto mt-5 justify-center text-center">
-        <h1 class="text-4xl  font-bold">Refreshing news for developers and designers</h1>
+        <h1 class="text-4xl font-bold invisible" x-intersect="$el.classList.add('fade-up'); $el.classList.remove('invisible');">Refreshing news for developers and designers</h1>
     </div>
 
     <div class="mx-auto  my-14 ">
 
         <div class="grid grid-cols-1 md:grid-cols-3 ">
 
-            <div class="mx-3 ">
+            <div class="mx-3 invisible" x-intersect="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
                 <div class="news-img-div-scalable">
 
                     <img src="/img/news-01.jpg " alt="" class="news-img-img-scalable">
@@ -30,7 +30,7 @@
             </div>
 
 
-            <div class="mx-3">
+            <div class="mx-3 invisible" x-intersect="sleep(300).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
                 <div class="news-img-div-scalable">
 
                     <img src="/img/news-02.jpg " alt="" class="news-img-img-scalable">
@@ -48,7 +48,7 @@
             </div>
 
 
-            <div class="mx-3">
+            <div class="mx-3 invisible" x-intersect="sleep(600).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
                 <div class="news-img-div-scalable">
 
                     <img src="/img/news-03.jpg " alt="" class="news-img-img-scalable">

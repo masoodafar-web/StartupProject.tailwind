@@ -44,7 +44,7 @@
 
    0%{
        opacity: 0;
-       transform: translateY(100%);
+       transform: translateY(15%);
    }
     100%{
        opacity: 1;
@@ -57,7 +57,7 @@
 
    0%{
        opacity: 0;
-       transform: translatex(-50%);
+       transform: translatex(-15%);
    }
     100%{
        opacity: 1;
@@ -70,7 +70,7 @@
 
    0%{
        opacity: 0;
-       transform: translatex(50%);
+       transform: translatex(15%);
    }
     100%{
        opacity: 1;
@@ -92,8 +92,26 @@
    
 }
 .anim-delay{
-  animation-delay: 0.08s;
+  animation-delay: 1s;
 }
+.anim-delay2{
+   animation-delay: 2s;
+ }
+.anim-delay3{
+   animation-delay: 3s;
+ }
+.anim-delay4{
+   animation-delay: 4s;
+ }
+.anim-delay5{
+   animation-delay: 5s;
+ }
+.anim-delay6{
+   animation-delay: 6s;
+ }
+.anim-delay7{
+   animation-delay: 7s;
+ }
  .pulse_loop{
     animation: pulseLoop 8s infinite;
     position: absolute;
@@ -172,3 +190,9 @@
 
 
 
+#card-grid> div{
+   @apply bg-pantone-426c
+}
+.pricing-btn{
+   @apply btn-pricing btn-neon-blue-pricing justify-center
+}
