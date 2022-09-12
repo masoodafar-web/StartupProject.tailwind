@@ -1,0 +1,74 @@
+<!--word-->
+<div id="Word">
+    <div class="text-center max-w-3xl mx-auto my-3 ">
+        <h1 class="text-4xl text-white font-bold   invisible"
+            x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">Don't take our word for
+            it</h1>
+        <p class="pt-5 text-gray-400 text-xl invisible"
+            x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">Vitae aliquet nec
+            ullamcorper sit amet risus nullam eget felis semper
+            quis lectus nulla at volutpat
+            diam ut venenatis tellus—in ornare.</p>
+    </div>
+
+    <div class="mt-10 border-bottom-raisin-black">
+        <div class="grid grid-cols-3  pb-8">
+            <div class="p-3  bg-pantone-426c mx-3 invisible" x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
+                <div class="flex">
+                    <img src="/img/features-avatar.jpg " alt="" class=" w-12  h-12 rounded-full relative">
+                    <span class="absolute  "
+                        x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
+                </div>
+                <p class=" border-b border-zinc-700 text-gray-500 text-base  py-5">— Open PRO lets me quickly
+                    get the insights I care about so
+                    that I can focus on my
+                    productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I
+                    functioned without it before.</p>
+                <div class=" py-2 text-sm"><span class="">Anastasia Dan
+                        <span class="text-gray-700">-</span>
+                        <a href="" class="text-pantone-266c">UX Board</a>
+                    </span></div>
+            </div>
+
+            <div class=" p-3 bg-pantone-426c mx-3 invisible" x-intersect.half="sleep(100).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+                <div class="flex">
+                    <img src="/img/testimonial-02.jpg" alt="" class=" w-12  h-12 rounded-full relative">
+                    <span class="absolute   "
+                        x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
+                </div>
+                <p class="border-b border-zinc-700 text-gray-500 text-base py-5">— Open PRO lets me quickly get
+                    the
+                    insights I care about so that
+                    I can focus on my
+                    productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I
+                    functioned without it before.</p>
+                <div class=" py-2 text-sm"><span class="">Anastasia Dan
+                        <span class="text-gray-700">-</span>
+                        <a href="" class="text-pantone-266c">UX Board</a>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="p-3  bg-pantone-426c mx-3 invisible " x-intersect.half="sleep(200).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+                <div class="flex">
+                <img src="/img/testimonial-03.jpg" alt="" class=" w-12  h-12 rounded-full relative">
+                <span class=""
+                    x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
+                </div>
+                <p class="border-b border-zinc-700 text-gray-500 text-base py-5">— Open PRO lets me quickly get
+                    the
+                    insights I care about so that
+                    I can focus on my
+                    productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I
+                    functioned without it before.
+                </p>
+                <div class="py-2 text-sm"><span class="">Anastasia Dan
+                        <span class="text-gray-700">-</span>
+                        <a href="" class="text-pantone-266c">UX Board</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

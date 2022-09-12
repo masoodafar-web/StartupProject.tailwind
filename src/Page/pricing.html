@@ -1,9 +1,29 @@
-<!--pricing -->
-<section id="pricing" x-init="$el.innerHTML=(await axios.get('Components/Pricing/pricing.html')).data"
-    class=" ">
 
+<!--simple -->
+<section id="simple" x-init="$el.innerHTML=(await axios.get('Components/pricing/simple.html')).data"
+    class=" ">
 </section>
-<section id=" Ready" x-init="$el.innerHTML=(await axios.get('Components/features/Ready.html')).data"
-    class=" ">
 
+
+<!-- contactbtn -->
+<section id="contactbtn"
+    x-init="$el.innerHTML=(await axios.get('Components/pricing/contactbtn.html')).data">
+</section>
+
+
+<!-- Frequently -->
+<section id="Frequently" x-init="$el.innerHTML=(await axios.get('Components/Pricing/Frequently.html')).data"
+    class=" ">
+</section>
+
+
+<!--word -->
+<section id="word" x-init="$el.innerHTML=(await axios.get('Components/pricing/word.html')).data"
+    class=" ">
+</section>
+
+
+<!-- Ready -->
+<section id="Ready"
+    x-init="$el.innerHTML=(await axios.get('Components/Features/Ready.html')).data">
 </section>

@@ -1,0 +1,181 @@
+<!--simple-->
+<div id="simple" class="mt-20 text-center">
+    <h1 class="text-5xl text-white font-bold invisible"
+        x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')"> Simple, transparent pricing
+    </h1>
+    <p class="text-xl text-cadet-grey py-2 max-w-3xl mx-auto mt-5 justify-center invisible"
+        x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">Get the Open PRO plan that
+        fits
+        your needs at a special introductory price.
+    </p>
+    <p class="text-lg text-gray-500 pt-7 invisible"
+        x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')"> Billed Monthly Billed
+        Annually </p>
+</div>
+
+
+
+<!--card-->
+<div id="card" class="text-gray-400 mt-10 border-bottom-raisin-black">
+    <div id="card-grid" class="grid grid-cols-1 md:grid-cols-3  ">
+
+        <div class="p-4 pt-4   mx-3 min-h-[580px] flex flex-col justify-between invisible" x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
+            <div class="space-y-3">
+                <h1 class="text-pantone-266c text-xl font-bold pt-3">Essential</h1>
+                <div class="">
+                    <span class=" text-3xl font-bold  text-gray-500">$</span>
+                    <span class="text-4xl font-bold">49</span>
+                    <span class="text-xl  text-gray-500">/mo</span>
+                </div>
+                <p class=" text-gray-400 border-b border-gray-700  pb-4 ">Better insights for growing businesses that
+                    want more customers.</p>
+                <ul class="space-y-4">
+                    <li class="px-2 text-white font-bold text-base">Features include:</li>
+
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class="text-cadet-grey">50 Placeholder text commonly</span>
+                    </li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class=" text-cadet-grey">Consectetur adipiscing elit</span>
+                    </li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class="text-cadet-grey">Excepteur sint occaecat cupidatat</span>
+                    </li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class="text-cadet-grey">Officia deserunt mollit anim</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="border-card">
+                <div class="pricing-btn"> Start free trial</div>
+            </div>
+        </div>
+
+
+
+        <div class="p-4 mx-3 min-h-[580px] relative flex flex-col justify-between invisible" x-intersect.half="sleep(100).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+            <span
+                class="text-center text-[14px] bg-green-200 text-green-600   right-5 -top-3  rounded-3xl px-2.5  py-1 absolute">Most
+                popular
+            </span>
+            <div class="space-y-3">
+                <h1 class="text-pantone-266c text-xl font-bold pt-3">Premium</h1>
+                <div class="">
+                    <span class=" text-3xl font-bold  text-gray-500">$</span>
+                    <span class="text-4xl font-bold">79</span>
+                    <span class="text-xl  text-gray-500">/mo</span>
+                </div>
+                <p class=" text-gray-400 border-b border-gray-700  pb-4">Better insights for growing businesses that
+                    want more customers.</p>
+                <ul class="space-y-4 ">
+                    <li class="px-2 text-white font-bold text-base">All features of Essential plus:</li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class=" text-cadet-grey">100 Placeholder text commonly</span>
+                    </li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class=" text-cadet-grey">Consectetur adipiscing elit</span>
+                    </li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class=" text-cadet-grey">Excepteur sint occaecat cupidatat</span>
+                    </li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class=" text-cadet-grey">Officia deserunt mollit anim</span>
+                    </li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class=" text-cadet-grey">Placeholder text commonly used</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class=" border-card mb-1">
+                <div class="pricing-btn"> Start free trial</div>
+            </div>
+        </div>
+
+
+
+        <div class=" p-4 pt-4  mx-3 min-h-[580px] flex flex-col justify-between invisible" x-intersect.half="sleep(200).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+            <div class="space-y-3">
+                <h1 class="text-pantone-266c text-xl font-bold pt-3">Advanced</h1>
+                <div class="">
+                    <span class=" text-3xl font-bold  text-gray-500">$</span>
+                    <span class="text-4xl font-bold">129</span>
+                    <span class="text-xl  text-gray-500">/mo</span>
+                </div>
+                <p class=" text-gray-400 border-b border-gray-700  pb-4">Better insights for growing businesses that
+                    want more customers.</p>
+                <ul class="space-y-4 ">
+                    <li class="px-2 text-white font-bold text-base">All features of Essential plus:</li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class="text-cadet-grey">200 Placeholder text commonly</span>
+                    </li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class=" text-cadet-grey">Consectetur adipiscing elit</span>
+                    </li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class=" text-cadet-grey">Excepteur sint occaecat cupidatat</span>
+                    </li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class=" text-cadet-grey">Officia deserunt mollit anim</span>
+                    </li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class=" text-cadet-grey">Voluptate velit esse cillum</span>
+                    </li>
+                    <li class=" flex items-start "><span class="mt-1"
+                            x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/checkSvg.html')).data">
+                        </span>
+                        <span class=" text-cadet-grey">Placeholder text commonly used</span>
+                    </li>
+                </ul>
+            </div>
+            <div class=" border-card mb-1">
+                <div class="pricing-btn"> Start free trial</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
