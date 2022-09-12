@@ -12,11 +12,12 @@
     </div>
 
     <div class="mt-10 border-bottom-raisin-black">
-        <div class="grid grid-cols-3  pb-8">
-            <div class="p-3  bg-pantone-426c mx-3 invisible" x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
-                <div class="flex">
-                    <img src="/img/features-avatar.jpg " alt="" class=" w-12  h-12 rounded-full relative">
-                    <span class="absolute  "
+        <div class="grid grid-cols-1 lg:grid-cols-3   pb-8">
+            <div class="p-3  bg-pantone-426c mx-3 invisible"
+                x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
+                <div class="w-fit relative">
+                    <img src="/img/features-avatar.jpg" alt="" class=" w-12  h-12 rounded-full ">
+                    <span class=" absolute -right-3 top-0"
                         x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
                 </div>
                 <p class=" border-b border-zinc-700 text-gray-500 text-base  py-5">— Open PRO lets me quickly
@@ -30,10 +31,11 @@
                     </span></div>
             </div>
 
-            <div class=" p-3 bg-pantone-426c mx-3 invisible" x-intersect.half="sleep(100).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
-                <div class="flex">
-                    <img src="/img/testimonial-02.jpg" alt="" class=" w-12  h-12 rounded-full relative">
-                    <span class="absolute   "
+            <div class=" p-3 bg-pantone-426c mx-3 invisible"
+                x-intersect.half="sleep(100).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+                <div class="w-fit relative">
+                    <img src="/img/testimonial-02.jpg" alt="" class=" w-12  h-12 rounded-full ">
+                    <span class=" absolute -right-3 top-0"
                         x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
                 </div>
                 <p class="border-b border-zinc-700 text-gray-500 text-base py-5">— Open PRO lets me quickly get
@@ -50,11 +52,12 @@
 
             </div>
 
-            <div class="p-3  bg-pantone-426c mx-3 invisible " x-intersect.half="sleep(200).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
-                <div class="flex">
-                <img src="/img/testimonial-03.jpg" alt="" class=" w-12  h-12 rounded-full relative">
-                <span class=""
-                    x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
+            <div class="p-3  bg-pantone-426c mx-3 invisible "
+                x-intersect.half="sleep(200).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+                <div class="w-fit relative">
+                    <img src="/img/testimonial-03.jpg" alt="" class=" w-12  h-12 rounded-full ">
+                    <span class=" absolute -right-3 top-0"
+                        x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
                 </div>
                 <p class="border-b border-zinc-700 text-gray-500 text-base py-5">— Open PRO lets me quickly get
                     the

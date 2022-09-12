@@ -8,9 +8,20 @@
         fits
         your needs at a special introductory price.
     </p>
-    <p class="text-lg text-gray-500 pt-7 invisible"
-        x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')"> Billed Monthly Billed
-        Annually </p>
+    <!-- switch -->
+    <div class=" pt-7 invisible flex gap-x-3 justify-center items-center"
+        x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">
+        <span class="text-base text-gray-500">Billed Monthly</span>
+
+        <div class="w-16 h-8  rounded-3xl  relative"
+            x-bind:class="pricingSwichIsMonthly?'bg-pantone-426c':'bg-neon-blue'"
+            x-on:click="pricingSwichIsMonthly=!pricingSwichIsMonthly">
+            <div class="w-7 h-7 bg-white rounded-full absolute transition-[left] duration-300 top-0.5 " id="test-123"
+                x-bind:class="pricingSwichIsMonthly?'left-0.5':'left-[34px]'"></div>
+        </div>
+
+        <span class="text-base text-gray-500">Billed Annually</span>
+    </div>
 </div>
 
 
@@ -19,13 +30,14 @@
 <div id="card" class="text-gray-400 mt-10 border-bottom-raisin-black">
     <div id="card-grid" class="grid grid-cols-1 md:grid-cols-3  ">
 
-        <div class="p-4 pt-4   mx-3 min-h-[580px] flex flex-col justify-between invisible" x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
+        <div class="p-4 pt-4   mx-3 min-h-[580px] flex flex-col justify-between invisible"
+            x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
             <div class="space-y-3">
                 <h1 class="text-pantone-266c text-xl font-bold pt-3">Essential</h1>
                 <div class="">
                     <span class=" text-3xl font-bold  text-gray-500">$</span>
-                    <span class="text-4xl font-bold">49</span>
-                    <span class="text-xl  text-gray-500">/mo</span>
+                    <span class="text-4xl font-bold" x-text="pricingSwichIsMonthly?'55':'49'"></span>
+                    <span class="text-xl  text-gray-500" x-text="pricingSwichIsMonthly?'/mo':'/an'"></span>
                 </div>
                 <p class=" text-gray-400 border-b border-gray-700  pb-4 ">Better insights for growing businesses that
                     want more customers.</p>
@@ -62,7 +74,8 @@
 
 
 
-        <div class="p-4 mx-3 min-h-[580px] relative flex flex-col justify-between invisible" x-intersect.half="sleep(100).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+        <div class="p-4 mx-3 min-h-[580px] relative flex flex-col justify-between invisible"
+            x-intersect.half="sleep(100).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
             <span
                 class="text-center text-[14px] bg-green-200 text-green-600   right-5 -top-3  rounded-3xl px-2.5  py-1 absolute">Most
                 popular
@@ -71,8 +84,8 @@
                 <h1 class="text-pantone-266c text-xl font-bold pt-3">Premium</h1>
                 <div class="">
                     <span class=" text-3xl font-bold  text-gray-500">$</span>
-                    <span class="text-4xl font-bold">79</span>
-                    <span class="text-xl  text-gray-500">/mo</span>
+                    <span class="text-4xl font-bold" x-text="pricingSwichIsMonthly?'85':'79'"></span>
+                    <span class="text-xl  text-gray-500" x-text="pricingSwichIsMonthly?'/mo':'/an'"></span>
                 </div>
                 <p class=" text-gray-400 border-b border-gray-700  pb-4">Better insights for growing businesses that
                     want more customers.</p>
@@ -113,13 +126,14 @@
 
 
 
-        <div class=" p-4 pt-4  mx-3 min-h-[580px] flex flex-col justify-between invisible" x-intersect.half="sleep(200).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+        <div class=" p-4 pt-4  mx-3 min-h-[580px] flex flex-col justify-between invisible"
+            x-intersect.half="sleep(200).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
             <div class="space-y-3">
                 <h1 class="text-pantone-266c text-xl font-bold pt-3">Advanced</h1>
                 <div class="">
                     <span class=" text-3xl font-bold  text-gray-500">$</span>
-                    <span class="text-4xl font-bold">129</span>
-                    <span class="text-xl  text-gray-500">/mo</span>
+                    <span class="text-4xl font-bold" x-text="pricingSwichIsMonthly?'135':'129'"></span>
+                    <span class="text-xl  text-gray-500" x-text="pricingSwichIsMonthly?'/mo':'/an'"></span>
                 </div>
                 <p class=" text-gray-400 border-b border-gray-700  pb-4">Better insights for growing businesses that
                     want more customers.</p>
@@ -163,19 +177,3 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

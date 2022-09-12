@@ -6,6 +6,9 @@ module.exports = {
       fontSize: {
         '2xl':"1.5rem"
       },
+      width: {
+        '125': '31.25rem',
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',

@@ -164,11 +164,11 @@
  }
 
  .news-img-div-scalable{
-     @apply mb-5 hover:cursor-pointer overflow-hidden w-full h-48
+     @apply mb-5 hover:cursor-pointer overflow-hidden max-w-max lg:w-full lg:h-48
  
   }
  .news-img-img-scalable{
-   @apply hover:scale-125 hover:opacity-50 transition-all
+   @apply hover:scale-125 hover:opacity-50 transition duration-500
 }
 
 .font-features{
@@ -199,4 +199,14 @@
 
 .border-card{
    @apply p-3 mb-1 border border-spacing-2 border-gray-700 
+}
+#blog-keys >li{
+   @apply flex items-center justify-center
+}
+
+#refreshing-para{
+   width: calc(100% - 1.75rem);
+}
+#refreshing-img{
+   width: calc(100% - 1.75rem);
 }
