@@ -905,8 +905,8 @@ video {
   height: 2.5rem;
 }
 
-.h-\[281px\] {
-  height: 281px;
+.h-full {
+  height: 100%;
 }
 
 .h-44 {
@@ -955,10 +955,6 @@ video {
 
 .h-4 {
   height: 1rem;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .min-h-screen {
@@ -2453,10 +2449,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:absolute {
-    position: absolute;
-  }
-
   .lg\:col-span-6 {
     grid-column: span 6 / span 6;
   }
