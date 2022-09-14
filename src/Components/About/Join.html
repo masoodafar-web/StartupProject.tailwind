@@ -7,49 +7,26 @@
         x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">Vitae aliquet nec ullamcorper
         sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus in ornare.
     </p>
-    <!-- 
-    <div class="pb-10">
-        <ul class="flex  gap-x-8 justify-center">
-            <li class="flex  ">
-                <span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                    class="mt-1 pr-1"></span>
-                Work Life Balance
-            </li>
-            <li class="flex"><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                    class="mt-1 pr-1"></span> Competitive Salary And Equity
-            </li>
-            <li class="flex"><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                    class="mt-1 pr-1"></span> 5 Weeks Paid Vacation</li>
-            <li class="flex"><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                    class="mt-1 pr-1"></span> Generous Gear Credit
-            </li>
-
-            <li class="flex"><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                    class="mt-1 pr-1"></span> Diversity and Inclusion</li>
-        </ul>
-    </div> -->
-
-
+    
     <div class="pb-10 justify-center">
-        <div class="grid grid-cols-3 grid-flow-row">
-            <div class="">
-                <span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data" class="">
+        <div class="grid grid-cols-3 grid-flow-row relative">
+            <div class=" ">
+                <span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data" class="absolute  pr-2">
                 </span>
                 Work Life Balance
-
             </div>
-            <div class=""><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                    class=""></span>
+            <div class="pr-3 mt-2"><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
+                class="absolute "></span>
                 Competitive Salary And Equity</div>
             <div class=""><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                    class=" "></span>
+                class="absolute"></span>
                 5 Weeks Paid Vacation</div>
             <div class=""><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                    class=" "></span>
+                class="absolute"></span>
                 Generous Gear Credit
             </div>
             <div class=""><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                    class=" "></span>
+                class="absolute"></span>
                 Diversity and Inclusion</div>
 
 
