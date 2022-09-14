@@ -3,6 +3,11 @@
 x-init="$el.innerHTML=(await axios.get('Components/About/Story.html')).data">
 </section>
 
+<!--gallery -->
+<section id="gallery" 
+x-init="$el.innerHTML=(await axios.get('Components/About/gallery.html')).data">
+</section>
+
 <!--Bringing -->
 <section id="Bringing" 
 x-init="$el.innerHTML=(await axios.get('Components/About/Bringing.html')).data">
@@ -18,12 +23,17 @@ x-init="$el.innerHTML=(await axios.get('Components/About/passionate.html')).data
 x-init="$el.innerHTML=(await axios.get('Components/About/Join.html')).data">
 </section>
 
-<!--openopsitions -->
-<section id="openopsitions" 
-x-init="$el.innerHTML=(await axios.get('Components/About/openopsitions.html')).data">
+<!--openpositions -->
+<section id="openpositions" 
+x-init="$el.innerHTML=(await axios.get('Components/About/openpositions.html')).data">
+</section>
+
+<!--customers -->
+<section id="customers" 
+x-init="$el.innerHTML=(await axios.get('Components/About/customers.html')).data">
 </section>
 
 <!--stayIn -->
 <section id="stayIn" 
-x-init="$el.innerHTML=(await axios.get('Components/About/stayIn.html')).data">
+x-init="$el.innerHTML=(await axios.get('Components/Home/stayIn.html')).data">
 </section>
