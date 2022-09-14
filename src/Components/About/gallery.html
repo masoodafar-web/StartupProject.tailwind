@@ -1,29 +1,22 @@
 
 <!--gallery-->
-<section id="gallery" class="relative -mt-3">
-    <div class="px-6 m-auto max-w-[72rem]">
-        <div class="max-w-[48rem] mx-auto ">
-            <div class="w-100 pb-[75%] relative h-0 m-0">
-
-                <div class="top-[45%] absolute max-w-[320px] w-[40%] invisible" x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
-                    <img src="/img/team-mosaic-02.jpg" alt="" class="">
+        <div class="max-w-[48rem] mx-auto relative max-h-[36rem] -mt-7">
+            <img src="/img/team-mosaic-02.jpg" alt="" class="w-full opacity-0">
+     
+                <div class="top-[45%] absolute  invisible  w-full flex justify-start" x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
+                    <img src="/img/team-mosaic-02.jpg" alt="" class="w-[42%]">
                 </div>
 
-                <div class="h-auto m-auto relative mr-5 max-w-[40rem] invisible" x-intersect.half="sleep(100).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
-                    <img src="/img/team-mosaic-01.jpg" alt="" class="w-[600px] h-[328px]">
+                <div class="top-0 absolute invisible w-full flex justify-center" x-intersect.half="sleep(100).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+                    <img src="/img/team-mosaic-01.jpg" alt="" class="w-[78%] ">
+                </div> 
+
+               <div class="absolute top-[8%] invisible w-full flex justify-end" x-intersect.half="sleep(200).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+                    <img src="/img/team-mosaic-03.jpg" alt="" class="w-[32%]">
                 </div>
 
-                <div class="absolute w-[32%] h-auto max-w-[250px] top-20 right-0 invisible" x-intersect.half="sleep(200).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
-                    <img src="/img/team-mosaic-03.jpg" alt="" class="">
+                <div class="absolute bottom-0 left-[56%]  w-full invisible" x-intersect.half="sleep(300).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+                    <img src="/img/team-mosaic-04.jpg" alt="" class="w-[25%] ">
                 </div>
 
-                <div class="absolute top-96 right-32 w-[25%] max-w-[190] invisible" x-intersect.half="sleep(300).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
-                    <img src="/img/team-mosaic-04.jpg" alt="" class="">
-                </div>
-
-
-
-            </div>
         </div>
-    </div>
-</section>

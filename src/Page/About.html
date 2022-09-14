@@ -2,14 +2,14 @@
 <section id="Story" 
 x-init="$el.innerHTML=(await axios.get('Components/About/Story.html')).data">
 </section>
-
 <!--gallery -->
 <section id="gallery" 
 x-init="$el.innerHTML=(await axios.get('Components/About/gallery.html')).data">
 </section>
 
+<div class="space-y-24 mt-16">
 <!--Bringing -->
-<section id="Bringing" 
+<section id="Bringing"
 x-init="$el.innerHTML=(await axios.get('Components/About/Bringing.html')).data">
 </section>
 
@@ -37,3 +37,4 @@ x-init="$el.innerHTML=(await axios.get('Components/About/customers.html')).data"
 <section id="stayIn" 
 x-init="$el.innerHTML=(await axios.get('Components/Home/stayIn.html')).data">
 </section>
+</div>
