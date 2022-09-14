@@ -1,5 +1,5 @@
 <!--join-->
-<div id="join" class="mt-20 text-center border-bottom-raisin-black ">
+<div id="join" class="mt-20 text-center  ">
     <h1 class="text-5xl text-white font-bold invisible"
         x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')"> Join the Open PRO team
     </h1>
@@ -7,32 +7,71 @@
         x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">Vitae aliquet nec ullamcorper
         sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus in ornare.
     </p>
-    
-    <div class="pb-10 justify-center">
-        <div class="grid grid-cols-3 grid-flow-row relative">
+
+    <div class="pb-10   ">
+        <div class="grid grid-cols-3 items-center relative">
             <div class=" ">
-                <span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data" class="absolute  pr-2">
+                <span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
+                    class="absolute">
                 </span>
-                Work Life Balance
+                <span class="mx-7">Work Life Balance</span>
             </div>
-            <div class="pr-3 mt-2"><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                class="absolute "></span>
-                Competitive Salary And Equity</div>
+            <div class="">
+                <span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
+                    class="absolute "></span>
+                <span class="mx-7">Competitive Salary And Equity</span>
+            </div>
+            <div class=" ">
+                <span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
+                    class="absolute">
+                </span>
+                <span class="mx-7">5 Weeks Paid Vacation</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="pb-10 text-center ">
+        <div class="grid grid-cols-2 relative">
             <div class=""><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                class="absolute"></span>
-                5 Weeks Paid Vacation</div>
-            <div class=""><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                class="absolute"></span>
-                Generous Gear Credit
+                    class="absolute"></span>
+                <span class="mx-7"> Generous Gear Credit</span>
             </div>
             <div class=""><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
-                class="absolute"></span>
-                Diversity and Inclusion</div>
+                    class="absolute"></span>
+                <span class="mx-7">Diversity and Inclusion</span>
+            </div>
 
 
         </div>
 
     </div>
-    <div class="">
-        <img src="/img/worldmap.png" alt="" class="">
+
+
+
+
+
+    <div class="max-w-3xl  m-auto">
+
+        <div class="py-14  h-[30rem]">
+
+            <div class="relative">
+                <div class="absolute top-0 bottom-0 left-0 right-0 m-auto justify-center flex">
+                    <img src="/img/worldmap.png" alt="" class="w-[600px] h-[350px]  ">
+                    <img src="/img/world-user-01.jpg" alt="" class="rounded-full w-10 h-10 -right-2/3 top-3.5">
+                    <img src="" alt="" class="">
+                    <img src="" alt="" class="">
+                    <img src="" alt="" class="">
+                    <img src="" alt="" class="">
+                    <img src="" alt="" class="">
+                </div>
+            </div>
+        </div>
+        <h1 class="">“ I feel grateful that Open PRO pushed me to expand my horizons and strive to accomplish more, not
+            only in my career but in education as well.“</h1>
+        <p class="">Dominik Prasad / <span class="blur-none"> Backend Lead</span> </p>
+        <di class=" ">
+            <a href="" class=""></a>
+            <a href="" class=""></a>
+            <a href="" class=""></a>
+        </di>
     </div>
