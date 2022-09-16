@@ -91,9 +91,11 @@
                 x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
                 <img src="/img/world-user-04.jpg" alt="" class="w-16 h-16 rounded-full">
             </div>
+
             <div class="top-[85%] right-96 absolute  invisible   flex justify-start "
                 x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
-                <img src="/img/world-user-04.jpg" alt="" class="w-16 h-16 rounded-full">
+                <img src="/img/world-user-04.jpg" alt="" class="w-16 h-16 rounded-full"><span class=" absolute  left-12"
+                        x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
             </div>
 
         </div>
