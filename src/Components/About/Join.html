@@ -8,8 +8,8 @@
         sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus in ornare.
     </p>
 
-    <div class="pb-10   ">
-        <div class="grid grid-cols-3 items-center relative">
+    <div class="pb-10  pt-10 ">
+        <div class="flex flex-wrap gap-y-4 justify-center relative max-w-[49.5rem] mx-auto ">
             <div class=" ">
                 <span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
                     class="absolute">
@@ -27,32 +27,32 @@
                 </span>
                 <span class="mx-7">5 Weeks Paid Vacation</span>
             </div>
-
-        </div>
-    </div>
-    <div class="pb-10 text-center ">
-        <div class="grid grid-cols-2 relative">
-            <div class=""><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
+            <div class="">
+                <span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
                     class="absolute"></span>
                 <span class="mx-7"> Generous Gear Credit</span>
             </div>
-            <div class=""><span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
+            <div class="">
+                <span x-init="$el.innerHTML=(await axios.get('Components/About/Svg/joinSvg.html')).data"
                     class="absolute"></span>
                 <span class="mx-7">Diversity and Inclusion</span>
             </div>
-
-
         </div>
-
     </div>
+
 
 
 
 
 
     <div class="max-w-[48rem]  mx-auto relative  mt-20">
-        <div class="relative max-h-[36rem] -mt-7 pb-[75%]">
+        <div class="relative max-h-[36rem]  ">
             <img src="/img/worldmap.png" alt="" class="">
+
+            <div class="flex justify-center items-end absolute inset-0">
+                <div class="h-[12rem] border-l border-dashed border-cadet-grey w-1 "></div>
+
+            </div>
 
             <div class="top-[20%] left-14 absolute  invisible   flex justify-start "
                 x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
@@ -92,49 +92,78 @@
                 <img src="/img/world-user-04.jpg" alt="" class="w-16 h-16 rounded-full">
             </div>
 
-            <div class="top-[85%] right-96 absolute  invisible   flex justify-start "
-                x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
-                <img src="/img/world-user-04.jpg" alt="" class="w-16 h-16 rounded-full"><span class=" absolute  left-12"
+
+
+        </div>
+        
+        <!-- slider -->
+        <div class="mt-10" x-data="{slid1:true,slid2:false,slid3:false}">
+            <div x-show="slid1" class=" flex flex-col items-center">
+                <div class="relative invisible   flex justify-center w-max"
+                    x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
+                    <img src="/img/world-user-04.jpg" alt="" class="w-16 h-16 rounded-full">
+                    <span class=" absolute  left-12"
                         x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
+                </div>
+                <p class="text-xl text-cadet-grey py-2 max-w-3xl mx-auto mt-5 justify-center invisible"
+                    x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">“1 I feel grateful
+                    that
+                    Open PRO pushed me to expand my horizons and strive to accomplish more, not only in my career but in
+                    education as well.“
+                </p>
+                <p class=" mt-3">Darya Semenova<span class="text-gray-700"> / </span><span class="text-blue-600">Backend
+                        Developer</span></p>
             </div>
 
+            <div  x-show="slid2" class=" flex flex-col items-center">
+                <div class="relative invisible   flex justify-center w-max"
+                    x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
+                    <img src="/img/world-user-04.jpg" alt="" class="w-16 h-16 rounded-full">
+                    <span class=" absolute  left-12"
+                        x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
+                </div>
+                <p class="text-xl text-cadet-grey py-2 max-w-3xl mx-auto mt-5 justify-center invisible"
+                    x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">“2 I feel grateful
+                    that
+                    Open PRO pushed me to expand my horizons and strive to accomplish more, not only in my career but in
+                    education as well.“
+                </p>
+                <p class=" mt-3">Darya Semenova<span class="text-gray-700"> / </span><span class="text-blue-600">Backend
+                        Developer</span></p>
+            </div>
+
+
+            <div  x-show="slid3" class="  flex flex-col items-center">
+                <div class="relative invisible   flex justify-center w-max"
+                    x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
+                    <img src="/img/world-user-04.jpg" alt="" class="w-16 h-16 rounded-full">
+                    <span class=" absolute  left-12"
+                        x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
+                </div>
+                <p class="text-xl text-cadet-grey py-2 max-w-3xl mx-auto mt-5 justify-center invisible"
+                    x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">“3 I feel grateful
+                    that
+                    Open PRO pushed me to expand my horizons and strive to accomplish more, not only in my career but in
+                    education as well.“
+                </p>
+                <p class=" mt-3">Darya Semenova<span class="text-gray-700"> / </span><span class="text-blue-600">Backend
+                        Developer</span></p>
+            </div>
+            <div class="justify-center flex items-center mt-8 gap-x-2">
+                <div class="bg-white w-3 h-3 rounded-full cursor-pointer " x-on:click="slid1=true,slid2=false,slid3=false">
+    
+                </div>
+                <div class="bg-white w-3 h-3 rounded-full  cursor-pointer" x-on:click="slid2=true,slid1=false,slid3=false">
+    
+                </div>
+                <div class="bg-white w-3 h-3 rounded-full  cursor-pointer" x-on:click="slid3=true,slid2=false,slid1=false">
+    
+                </div>
+    
+            </div>
         </div>
 
 
-        <p class="text-xl text-cadet-grey py-2 max-w-3xl mx-auto mt-5 justify-center invisible"
-            x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">“ I feel grateful that
-            Open PRO pushed me to expand my horizons and strive to accomplish more, not only in my career but in
-            education as well.“
-        </p>
-        <p class=" mt-3">Darya Semenova<span class="text-gray-700"> / </span><span class="text-blue-600">Backend Developer</span></p>
 
-
-        <p id="joinbtn" class="text-xl text-cadet-grey py-2 max-w-3xl mx-auto mt-5 justify-center invisible" 
-            x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')"  >“ Not only in my career
-            but in education as well, I feel grateful that Open PRO pushed me to expand my horizons and strive to
-            accomplish more.“
-         
-        </p>
-        <p class="mt-3">Greg Sebastian<span class="text-gray-700"> / </span><span class="text-blue-600">Head of Design</span></p>
-
-
-        <p class="text-xl text-cadet-grey py-2 max-w-3xl mx-auto mt-5 justify-center invisible"
-            x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">“ I feel grateful that
-            Open PRO pushed me to expand my horizons and strive to accomplish more, not only in my career but in
-            education as well.“
-        </p>
-        <p class="mt-3">Dominik Prasad <span class="text-gray-700"> / </span><span class="text-blue-600">Backend Lead</span></p>
-
-        <div class="justify-center flex items-center mt-8 gap-x-2">
-            <div class="bg-white w-3 h-3 rounded-full  " >
-            
-            </div>
-            <div class="bg-white w-3 h-3 rounded-full  ">
-
-            </div>
-            <div class="bg-white w-3 h-3 rounded-full  ">
-
-            </div>
-
-        </div>
+    
     </div>
