@@ -1,0 +1,14 @@
+<!--contactus -->
+<section id="contactus" 
+x-init="$el.innerHTML=(await axios.get('Components/support/contactus.html')).data">
+</section>
+
+<!--helpcenter -->
+<section id="helpcenter" 
+x-init="$el.innerHTML=(await axios.get('Components/support/helpcenter.html')).data">
+</section>
+
+<!--404 -->
+<section id="404" 
+x-init="$el.innerHTML=(await axios.get('Components/support/404.html')).data">
+</section>

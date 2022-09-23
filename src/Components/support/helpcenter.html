@@ -1,0 +1,233 @@
+<!--helpcenter-->
+
+<div class="grid grid-cols-1 w-full mx-auto space-y-20 mt-32"
+    x-data="{link1:true,link2:false,link3:false,link4:false,link5:false,arrow1:false,arrow2:false,arrow3:false,arrow4:false,arrow5:false}">
+    <div class="flex gap-x-10 ">
+        <div class="w-3/12">
+            <h1 class="text-xl text-white border-bottom-gray-support py-2">Choose a category</h1>
+            <ul class=" text-sm text-gray-700">
+                <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer "
+                    x-on:click="link1=true,link2=false,link3=false,link4=false,link5=false,arrow1=true">Frequently Asked Questions
+
+                    <span class="absolute items-center ml-2 " x-show="arrow1"
+                        x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
+                    </span>
+
+                </li>
+                <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer"
+                    x-on:click="link2=true,link1=false,link3=false,link4=false,link5=false" ">What is Open PRO
+                    <span class="absolute items-center ml-2 "
+                        x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
+                    </span>
+                </li>
+
+                <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer"
+                    x-on:click="link3=true,link1=false,link2=false,link4=false,link5=false" >Open PRO plan’s features
+                    <span class="absolute items-center ml-2 "
+                        x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
+                    </span>
+                </li>
+                <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer"
+                    x-on:click="link4=true,link1=false,link2=false,link3=false,link5=false">Get started
+                    <span class="absolute items-center ml-2 "
+                        x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
+                    </span>
+                </li>
+                <li class="border-bottom-support py-2 hover:text-neon-blue cursor-pointer"
+                    x-on:click="link5=true,link1=false,link2=false,link3=false,link4=false">Payments FAQ’s
+                    <span class="absolute items-center ml-2 "
+                        x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
+                    </span>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="w-9/12">
+            <div class="mx-auto" x-show="link1">
+                <h1 class="font-features invisible text-5xl"
+                    x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')"> FAQs – Frequently
+                    Asked Questions </h1>
+                <p class="py-10">Last updated -<span class="text-neon-blue">June 30, 2020</span></p>
+
+                <p class="text-white text-xl ">How can I use Open PRO without registration?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-white text-xl  pt-5 ">Can I import my sitemap to Open PRO</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-white text-xl pt-5">How can I switch my subscription between essential, and premium
+                    plans?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-white text-xl pt-5">Is there an additional discount when paid annually?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-white text-xl pt-5">What happens if I don’t renew my license after one year?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+                <p class="text-white text-xl pt-5">What kind of payment methods do you provide?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+            </div>
+
+
+            <div class="mx-auto" x-show="link2">
+                <h1 class="font-features  text-5xl text-red-500 invisible"
+                    x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">What is Open PRO
+                </h1>
+                <p class="py-10">Last updated -<span class="text-neon-blue">June 30, 2020</span></p>
+
+                <p class="text-red-500 text-xl ">How can I use Open PRO without registration?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-red-500 text-xl  pt-5 ">Can I import my sitemap to Open PRO</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-red-500 text-xl pt-5">How can I switch my subscription between essential, and premium
+                    plans?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-red-500 text-xl pt-5">Is there an additional discount when paid annually?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-red-500 text-xl pt-5">What happens if I don’t renew my license after one year?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+                <p class="text-red-500 text-xl pt-5">What kind of payment methods do you provide?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+            </div>
+
+            <div class="mx-auto" x-show="link3">
+                <h1 class="font-features invisible text-5xl text-yellow-400"
+                    x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">Open PRO plan’s
+                    features </h1>
+                <p class="py-10">Last updated -<span class="text-neon-blue">June 30, 2020</span></p>
+
+                <p class="text-yellow-400 text-xl">How can I use Open PRO without registration?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-yellow-400 text-xl  pt-5 ">Can I import my sitemap to Open PRO</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-yellow-400 text-xl pt-5">How can I switch my subscription between essential, and premium
+                    plans?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-yellow-400 text-xl pt-5">Is there an additional discount when paid annually?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-yellow-400 text-xl pt-5">What happens if I don’t renew my license after one year?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+                <p class="text-yellow-400 text-xl pt-5">What kind of payment methods do you provide?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+            </div>
+
+            <div class="mx-auto" x-show="link4">
+                <h1 class="font-features invisible text-5xl text-orange-800"
+                    x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">Get started </h1>
+                <p class="py-10">Last updated -<span class="text-neon-blue">June 30, 2020</span></p>
+
+                <p class="text-orange-800 text-xl">How can I use Open PRO without registration?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+                <p class="text-orange-800 text-xl  pt-5 ">Can I import my sitemap to Open PRO</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-orange-800 text-xl pt-5">How can I switch my subscription between essential, and premium
+                    plans?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-orange-800 text-xl pt-5">Is there an additional discount when paid annually?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-orange-800 text-xl pt-5">What happens if I don’t renew my license after one year?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+                <p class="text-orange-800 text-xl pt-5">What kind of payment methods do you provide?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+            </div>
+
+            <div class="mx-auto" x-show="link5">
+                <h1 class="font-features invisible text-5xl text-green-500"
+                    x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">Payments FAQ’s
+                </h1>
+                <p class="py-10">Last updated -<span class="text-neon-blue">June 30, 2020</span></p>
+
+                <p class="text-green-500 text-xl">How can I use Open PRO without registration?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-green-500 text-xl  pt-5 ">Can I import my sitemap to Open PRO</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-green-500 text-xl pt-5">How can I switch my subscription between essential, and premium
+                    plans?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-green-500 text-xl pt-5">Is there an additional discount when paid annually?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+
+                <p class="text-green-500 text-xl pt-5">What happens if I don’t renew my license after one year?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+
+                <p class="text-green-500 text-xl pt-5">What kind of payment methods do you provide?</p>
+                <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
+            </div>
+        </div>
+
+    </div>
+</div>

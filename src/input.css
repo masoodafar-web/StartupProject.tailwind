@@ -210,3 +210,7 @@
 #refreshing-img{
    width: calc(100% - 1.75rem);
 }
+
+.border-bottom-support{
+   @apply border-b-2  border-gray-600 border-opacity-20
+}

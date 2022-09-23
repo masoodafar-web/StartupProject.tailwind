@@ -15,7 +15,7 @@
 </head>
 
 <body class="bg-eerie-black"
-    x-data="{home:true,pricing:false,features:false,blog:false,about:false,pricingSwichIsMonthly:false,joinbtn:false,}">
+    x-data="{home:true,pricing:false,features:false,blog:false,about:false,pricingSwichIsMonthly:false,joinbtn:false,support:false}">
     <section x-data="" id="full" class="overflow-x-hidden relative min-h-screen ">
  
         <!-- Layout Svg -->
@@ -60,6 +60,20 @@
             <template x-if="about">
                 <main class="" x-html="(await axios.get('Page/about.html')).data">
 
+                </main>
+            </template>
+
+            <template x-if="contactus">
+                <main class="" x-html="(await axios.get('Page/support.html')).data">
+                </main>
+            </template>
+
+            <template x-if="helpcenter">
+                <main class="" x-html="(await axios.get('Page/support.html')).data">
+                </main>
+            </template>
+            <template x-if="404">
+                <main class="" x-html="(await axios.get('Page/support.html')).data">
                 </main>
             </template>
 

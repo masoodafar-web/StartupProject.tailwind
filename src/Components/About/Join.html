@@ -1,6 +1,6 @@
 <!--join-->
 <div id="join" class="mt-20 text-center  ">
-    <h1 class="text-5xl text-white font-bold invisible"
+    <h1 class="text-3xl text-white font-bold invisible"
         x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')"> Join the Open PRO team
     </h1>
     <p class="text-xl text-cadet-grey py-2 max-w-3xl mx-auto mt-5 justify-center invisible"
@@ -47,63 +47,67 @@
 
     <div class="max-w-[48rem]  mx-auto relative  mt-20">
         <div class="relative max-h-[36rem]  ">
-            <img src="/img/worldmap.png" alt="" class="">
+            <img src="/img/worldmap.png" alt="" class="" >
+           
+
 
             <div class="flex justify-center items-end absolute inset-0">
                 <div class="h-[12rem] border-l border-dashed border-cadet-grey w-1 "></div>
-
             </div>
 
-            <div class="top-[20%] left-14 absolute  invisible   flex justify-start "
+            <div class="top-[25%] left-[8%] absolute  invisible   flex justify-start "
                 x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
                 <img src="/img/team-member-02.jpg" alt="" class="w-12 h-12 rounded-full">
             </div>
 
-            <div class="top-[39%] left-44 absolute  invisible   flex justify-start "
+            <div class="top-[53%] left-[18%] absolute  invisible   flex justify-start "
                 x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
                 <img src="/img/world-user-06.jpg" alt="" class="w-16 h-16 rounded-full">
             </div>
 
-            <div class="top-[13%] left-52 absolute  invisible   flex justify-start "
+            <div class="top-[14%] left-[28%] absolute  invisible   flex justify-start "
                 x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
                 <img src="/img/world-user-07.jpg" alt="" class="w-16 h-16 rounded-full">
             </div>
 
-            <div class="top-[25%] left-80 absolute  invisible   flex justify-start "
+            <div class="top-[38%] left-[42%] absolute  invisible   flex justify-start "
                 x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
                 <img src="/img/world-user-08.jpg" alt="" class="w-11 h-11 rounded-full">
             </div>
 
-            <div class="top-[12%] left-96 absolute  invisible   flex justify-start "
+            <div class="top-[18%] left-[50%] absolute  invisible   flex justify-start "
                 x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
                 <img src="/img/world-user-01.jpg" alt="" class="w-9 h-9 rounded-full">
             </div>
 
-            <div class="top-[34%] right-56 absolute  invisible   flex justify-start "
+            <div class="top-[49%] left-[58%] absolute  invisible   flex justify-start "
                 x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
                 <img src="/img/world-user-02.jpg" alt="" class="w-14 h-14 rounded-full">
             </div>
-            <div class="top-[8%] right-48 absolute  invisible   flex justify-start "
+            <div class="top-[9%] left-[70%] absolute  invisible   flex justify-start "
                 x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
                 <img src="/img/world-user-03.jpg" alt="" class="w-14 h-14 rounded-full">
             </div>
-            <div class="top-[23%] right-24 absolute  invisible   flex justify-start "
+            <div class="top-[38%] left-[79%] absolute  invisible   flex justify-start "
                 x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
-                <img src="/img/world-user-04.jpg" alt="" class="w-16 h-16 rounded-full">
+                <img src="/img/world-user-04.jpg" alt="" class="w-20 h-20 rounded-full">
             </div>
 
 
 
         </div>
-        
+
         <!-- slider -->
         <div class="mt-10" x-data="{slid1:true,slid2:false,slid3:false}">
             <div x-show="slid1" class=" flex flex-col items-center">
-                <div class="relative invisible   flex justify-center w-max"
+                <div class="relative invisible  flex justify-center w-max"
                     x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
-                    <img src="/img/world-user-04.jpg" alt="" class="w-16 h-16 rounded-full">
+                    <img src="/img/world-user-01.jpg" alt="" class="w-16 h-16 rounded-full">
                     <span class=" absolute  left-12"
-                        x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
+                        x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data">
+                    </span>
+
+
                 </div>
                 <p class="text-xl text-cadet-grey py-2 max-w-3xl mx-auto mt-5 justify-center invisible"
                     x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">“1 I feel grateful
@@ -115,28 +119,26 @@
                         Developer</span></p>
             </div>
 
-            <div  x-show="slid2" class=" flex flex-col items-center">
+            <div x-show="slid2" class=" flex flex-col items-center">
                 <div class="relative invisible   flex justify-center w-max"
                     x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
-                    <img src="/img/world-user-04.jpg" alt="" class="w-16 h-16 rounded-full">
+                    <img src="/img/world-user-02.jpg" alt="" class="w-16 h-16 rounded-full">
                     <span class=" absolute  left-12"
                         x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
                 </div>
                 <p class="text-xl text-cadet-grey py-2 max-w-3xl mx-auto mt-5 justify-center invisible"
-                    x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">“2 I feel grateful
-                    that
-                    Open PRO pushed me to expand my horizons and strive to accomplish more, not only in my career but in
-                    education as well.“
-                </p>
-                <p class=" mt-3">Darya Semenova<span class="text-gray-700"> / </span><span class="text-blue-600">Backend
-                        Developer</span></p>
+                    x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">“2 “ Not only in
+                    my career but in education as well, I feel grateful that Open PRO pushed me to expand my horizons
+                    and strive to accomplish more.““
+                <p class=" mt-3">Greg Sebastian<span class="text-gray-700"> / </span><span class="text-blue-600">Head of
+                        Design</span></p>
             </div>
 
 
-            <div  x-show="slid3" class="  flex flex-col items-center">
+            <div x-show="slid3" class="  flex flex-col items-center">
                 <div class="relative invisible   flex justify-center w-max"
                     x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
-                    <img src="/img/world-user-04.jpg" alt="" class="w-16 h-16 rounded-full">
+                    <img src="/img/world-user-03.jpg" alt="" class="w-16 h-16 rounded-full">
                     <span class=" absolute  left-12"
                         x-init="$el.innerHTML=(await axios.get('Components/pricing/svg/prisingSvg.html')).data"></span>
                 </div>
@@ -146,24 +148,25 @@
                     Open PRO pushed me to expand my horizons and strive to accomplish more, not only in my career but in
                     education as well.“
                 </p>
-                <p class=" mt-3">Darya Semenova<span class="text-gray-700"> / </span><span class="text-blue-600">Backend
-                        Developer</span></p>
+                <p class=" mt-3">Dominik Prasad<span class="text-gray-700"> / </span><span class="text-blue-600">
+                        Backend Lead</span></p>
+
             </div>
             <div class="justify-center flex items-center mt-8 gap-x-2">
-                <div class="bg-white w-3 h-3 rounded-full cursor-pointer " x-on:click="slid1=true,slid2=false,slid3=false">
-    
+                <div class="bg-white w-3 h-3 rounded-full cursor-pointer "
+                    x-on:click="slid1=true,slid2=false,slid3=false">
+
                 </div>
-                <div class="bg-white w-3 h-3 rounded-full  cursor-pointer" x-on:click="slid2=true,slid1=false,slid3=false">
-    
+                <div class="bg-white w-3 h-3 rounded-full  cursor-pointer"
+                    x-on:click="slid2=true,slid1=false,slid3=false">
+
                 </div>
-                <div class="bg-white w-3 h-3 rounded-full  cursor-pointer" x-on:click="slid3=true,slid2=false,slid1=false">
-    
+                <div class="bg-white w-3 h-3 rounded-full  cursor-pointer"
+                    x-on:click="slid3=true,slid2=false,slid1=false">
+
                 </div>
-    
+
             </div>
         </div>
 
-
-
-    
     </div>
