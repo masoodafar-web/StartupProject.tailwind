@@ -1,0 +1,49 @@
+<h1 class="text-4xl font-bold text-center w-3/4 mx-auto pb-20">From the big picture to every tiny detail, we got you
+    covered.</h1>
+
+<div class="grid grid-cols-12 lg:gap-x-16">
+    <!-- img -->
+    <div class="col-span-12 lg:col-span-6 invisible" x-intersect.half="$el.classList.add('fade-ltr');$el.classList.remove('invisible')">
+        <img src="/dist/img/home/features-02-image.png"
+         class="w-full object-cover " 
+         
+         alt="From the big picture" />
+    </div>
+    
+    <!-- list text -->
+    <div class="col-span-12 lg:col-span-6 flex flex-col gap-y-4  " >
+        <h3 class="font-arch-daug text-neon-blue text-xl  my-7 invisible"  x-intersect.full="$el.classList.add('fade-rtl');$el.classList.remove('invisible')"> Be the change you want to see</h3>
+        <ul class="list-disc space-y-3 list-inside">
+            <li class=" marker:text-neon-blue  text-sm  space-y-3 invisible"  x-intersect="$el.classList.add('fade-rtl');$el.classList.remove('invisible')">
+                <span class="text-2xl font-bold pb-3">For developers</span>
+                <p class="text-cadet-grey text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+                    quos eos quidem modi minus est
+                    facere
+                    quaerat consequuntur, amet esse eligendi aliquam optio ratione fuga hic voluptatum! Molestias,
+                    adipisci
+                    magni.</p>
+            </li>
+            <li class=" marker:text-green-pantone  space-y-3 invisible"  x-intersect="sleep(100).then(() => {$el.classList.add('fade-rtl'); $el.classList.remove('invisible'); })">
+
+                <span class="text-2xl font-bold pb-3"> For designers</span>
+                <p class="text-cadet-grey text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+                    quos eos quidem modi minus est
+                    facere
+                    quaerat consequuntur, amet esse eligendi aliquam optio ratione fuga hic voluptatum! Molestias,
+                    adipisci
+                    magni.</p>
+            </li>
+            <li class=" marker:text-rose-bonbon space-y-3 invisible" x-intersect="sleep(200).then(() => {$el.classList.add('fade-rtl'); $el.classList.remove('invisible'); })">
+                <span class="text-2xl font-bold "> For teams</span>
+                <p class="text-cadet-grey text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+                    quos eos quidem modi minus est
+                    facere
+                    quaerat consequuntur, amet esse eligendi aliquam optio ratione fuga hic voluptatum! Molestias,
+                    adipisci
+                    magni.</p>
+            </li>
+
+        </ul>
+
+    </div>
+</div>

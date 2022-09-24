@@ -1,46 +1,38 @@
  <!-- Landing -->
- <div class=" text-center mt-16" x-html="(await axios.get('Components/Home/landing.html')).data">
+ <section class="min-h-[892px] text-center mt-16" x-html="(await axios.get('Components/Home/landing.html')).data">
 
-</div>
+</section>
 
 <!-- built_exclusively -->
 <section id="built_exclusively"
-    x-init="$el.innerHTML=(await axios.get('Components/Home/built_exclusively.html')).data">
+    x-init="$el.innerHTML=(await axios.get('Components/Home/built_exclusively.html')).data"
+    class="border-bottom-raisin-black">
 
 </section>
-<!-- built_exclusively -->
-<section id="Light_fast" x-init="$el.innerHTML=(await axios.get('Components/Home/Light_fast.html')).data">
+<!--Light_fast-->
+<section id="Light_fast" x-init="$el.innerHTML=(await axios.get('Components/Home/Light_fast.html')).data"
+class=" border-bottom-raisin-black">
 
 </section>
 
 <!-- workflow -->
 <section id="workflow "
     x-init="$el.innerHTML=(await axios.get('Components/Home/Integratedworkflow.html')).data"
-    class="text-alise-blue">
+    class="text-alise-blue  border-bottom-raisin-black">
 </section>
 
+
 <!-- From the big -->
-<!-- <section id="From_the_big "
-    x-init="$el.innerHTML=(await axios.get('Components/Home/Integratedworkflow.html')).data"
-    class="text-alise-blue">
-
-</section> -->
-
-
-
-
-
-
-
-
+<section id="From_the_big "
+    x-init="$el.innerHTML=(await axios.get('Components/Home/fromTheBigPicture.html')).data"
+    class="text-alise-blue border-bottom-raisin-black">
+</section>
 
 
 <!--News -->
-<!-- <section id="News" x-init="$el.innerHTML=(await axios.get('Components/Home/News.html')).data"
+<section id="News" x-init="$el.innerHTML=(await axios.get('Components/Home/News.html')).data"
     class=" ">
-</section> -->
-
-
+</section>
 
 
 <!--stay in -->

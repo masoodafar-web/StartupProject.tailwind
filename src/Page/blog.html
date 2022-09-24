@@ -1,0 +1,20 @@
+
+<!--Refreshing -->
+<section id="refreshing" 
+x-init="$el.innerHTML=(await axios.get('Components/blog/refreshing.html')).data">
+</section>
+
+<!--latest -->
+<section id="latest" 
+x-init="$el.innerHTML=(await axios.get('Components/blog/latest.html')).data">
+</section>
+
+<!--key -->
+<section id="key" 
+x-init="$el.innerHTML=(await axios.get('Components/blog/key.html')).data">
+</section>
+
+<!--stayIn -->
+<section id="stayIn" 
+x-init="$el.innerHTML=(await axios.get('Components/Home/stayIn.html')).data">
+</section>

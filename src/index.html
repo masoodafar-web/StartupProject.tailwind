@@ -7,18 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/css/output.css">
     <link rel="stylesheet" href="../dist/css/font.css">
+    <script src="../dist/js/main.js"></script>
     <script src="../dist/js/axios.min.js"></script>
     <script src="../dist/js/intersectcdn.min.js" defer></script>
     <script src="../dist/js/cdn.min.js" defer></script>
     <title>Home</title>
 </head>
 
-<body class="bg-eerie-black" x-data="{home:true,pricing:false,features:false}">
+<body class="bg-eerie-black"
+    x-data="{home:true,pricing:false,features:false,blog:false,about:false,pricingSwichIsMonthly:false}">
     <section x-data="" id="full" class="overflow-x-hidden relative min-h-screen ">
-
+ 
         <!-- Layout Svg -->
-        <div x-html="(await axios.get('Components/Shared/backgroundSVG.html')).data">
-        </div>
+
+            <div x-html="(await axios.get('Components/Shared/backgroundSVG.html')).data">
+            </div>
 
         <section class="container ">
             <!-- header -->
@@ -32,22 +35,34 @@
 
             <!-- Content -->
             <template x-if="home">
-                <main class="space-y-32" x-html="(await axios.get('Page/home.html')).data">
+                <main class="space-y-24" x-html="(await axios.get('Page/home.html')).data">
 
                 </main>
             </template>
 
             <template x-if="pricing">
-                <main class="space-y-32" x-html="(await axios.get('Page/pricing.html')).data">
+                <main class="space-y-24" x-html="(await axios.get('Page/pricing.html')).data">
 
                 </main>
             </template>
 
             <template x-if="features">
-                <main class="space-y-32" x-html="(await axios.get('Page/features.html')).data">
+                <main class="space-y-24" x-html="(await axios.get('Page/features.html')).data">
 
                 </main>
             </template>
+            <template x-if="blog">
+                <main class="space-y-24" x-html="(await axios.get('Page/blog.html')).data">
+
+                </main>
+            </template>
+
+            <template x-if="about">
+                <main class="" x-html="(await axios.get('Page/about.html')).data">
+
+                </main>
+            </template>
+
 
             <!-- footer -->
             <footer class="" x-init="$el.innerHTML=(await axios.get('Components/Shared/footer.html')).data">

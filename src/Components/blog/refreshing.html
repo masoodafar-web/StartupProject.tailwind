@@ -1,0 +1,38 @@
+<!--refreshing-->
+<div id="refreshing" class="w-full mx-auto space-y-8  mt-20">
+    <h1 class="font-bold text-6xl text-left invisible"
+        x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')">Refreshing news for<br>
+        developers and designers
+    </h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 ">
+
+        <div class="invisible " x-intersect.half="$el.classList.add('fade-ltr');$el.classList.remove('invisible')">
+            <div class="relative  group">
+                <div id="refreshing-para"
+                    class=" h-full bg-raisin-black md:absolute transition-[left,top] duration-700 left-7 top-4 group-hover:left-0 group-hover:top-0">
+                </div>
+                <div id="refreshing-img"
+                    class="w-full overflow-hidden relative  transition-[left,top] duration-700  -top-4 md:group-hover:left-0 md:group-hover:top-0 ">
+
+                    <img src="/img/blog-post-01.jpg" alt=""
+                        class=" group-hover:scale-105 transition-all duration-500 delay-100">
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-2 invisible" x-intersect.half="$el.classList.add('fade-rtl');$el.classList.remove('invisible')">
+            <div class="ml-5 ">
+                <button href="" class="bg-pantone-266c btn-news hover:bg-pantone-2736">product</button>
+                <button href="" class="bg-pantone-2727c btn-news  hover:bg-pantone-2726c">Engineering</button>
+                <h1 class="text-3xl my-4 font-bold">Designing a functional workflow at home.</h1>
+                <p class="text-lg text-gray-400 max-w-xl font-bold">Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+                <div class="flex items-center mt-3">
+                    <a href="" class=""><img src="/img/news-author-04.jpg" alt="" class="rounded-full w-10 h-10">
+                        <h1 class="pl-3 text-sm">hris Solerieu - <span class="text-gray-500">
+                    </a> Jan 19, 2020</span> </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

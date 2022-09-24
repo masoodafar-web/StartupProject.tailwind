@@ -1,18 +1,18 @@
 <div class="max-w-3xl mx-auto">
 
     <div class="text-center my-14">
-        <p x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
+        <p x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')"
             class="invisible text-4xl font-bold m-0 px-10 mb-5 ">
             Integrated workflow designed for product teams
         </p>
-        <p x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
+        <p x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')"
             class="invisible text-cadet-grey text-xl px-5">
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum —
             semper quis lectus nulla.
         </p>
     </div>
 
-    <div x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
+    <div x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')"
         class="invisible  grid grid-flow-row grid-cols-5 gap-3">
         <div x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/Integratedworkflow/svg1.html')).data"
             class="flex items-center bg-raisin-black focus:bg-slate-400 p-3 justify-center gap-2 text-cadet-grey rounded-3xl hover:text-alise-blue hover:cursor-pointer ">
@@ -40,7 +40,7 @@
 </div>
 
 <!-- Optimize Card -->
-<div class="w-full bg-raisin-black grid  grid-cols-12  mt-10 ">
+<div class="w-full bg-raisin-black grid  grid-cols-12  mt-10 invisible" x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')">
     <!-- text -->
     <div class="col-span-12 sm:col-span-8 md:col-span-7 lg:col-span-6 flex flex-col justify-center px-5 gap-y-4 py-5 order-2  sm:order-1">
         <h2 class="text-xl text-white-grey font-bold">Optimize and scale, easy to start</h2>

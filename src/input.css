@@ -6,33 +6,12 @@
 
 *{
    font-family: Inter,sans-serif;
-   @apply text-white
+   @apply text-white-grey
 }
 
 [x-cloak] { display: none !important; }
 
-/* animation */
-@keyframes fadeUp {
 
-    0%{
-        opacity: 0;
-        transform: translateY(100%);
-    }
-     100%{
-        opacity: 1;
-        transform: translateY(0);
-
-    }
-    
-}
-
-.fade-up{
-    animation: fadeUp 1s;
-    
-}
-.anim-delay{
-   animation-delay: 0.08s;
-}
 .btn{
   @apply px-6 py-3 flex items-center hover:cursor-pointer rounded-sm w-fit
 }
@@ -47,8 +26,9 @@
  }
  /* #navbar_menu li{
 @apply hover:bg-cadet-grey
- } */
+} */
 
+/* ------------------------------------animation------------------------------------------------------ */ 
  @keyframes pulseLoop {
     0%{
         opacity: 1;
@@ -59,7 +39,79 @@
         transform: scale(4);
     }
  }
+/* animation */
+@keyframes fadeUp {
 
+   0%{
+       opacity: 0;
+       transform: translateY(15%);
+   }
+    100%{
+       opacity: 1;
+       transform: translateY(0);
+
+   }
+   
+}
+@keyframes fadeltr {
+
+   0%{
+       opacity: 0;
+       transform: translatex(-15%);
+   }
+    100%{
+       opacity: 1;
+       transform: translatex(0);
+
+   }
+   
+}
+@keyframes fadertl {
+
+   0%{
+       opacity: 0;
+       transform: translatex(15%);
+   }
+    100%{
+       opacity: 1;
+       transform: translatex(0);
+
+   }
+   
+}
+.fade-up{
+   animation: fadeUp 1s;
+   
+}
+.fade-ltr{
+   animation: fadeltr 1s;
+   
+}
+.fade-rtl{
+   animation: fadertl 1s;
+   
+}
+.anim-delay{
+  animation-delay: 1s;
+}
+.anim-delay2{
+   animation-delay: 2s;
+ }
+.anim-delay3{
+   animation-delay: 3s;
+ }
+.anim-delay4{
+   animation-delay: 4s;
+ }
+.anim-delay5{
+   animation-delay: 5s;
+ }
+.anim-delay6{
+   animation-delay: 6s;
+ }
+.anim-delay7{
+   animation-delay: 7s;
+ }
  .pulse_loop{
     animation: pulseLoop 8s infinite;
     position: absolute;
@@ -76,7 +128,7 @@
  .anim-delay-8{
     animation-delay: -8s;
  }
-
+/* ------------------------------------animation------------------------------------------------------ */
 
  .btn-news{
    @apply px-4 py-1 rounded-2xl text-xs;
@@ -103,3 +155,58 @@
     top: 26px;
 
  }
+ .border-bottom-raisin-black{
+  @apply border-b-raisin-black  border-b pb-10
+ }
+
+ .font-arch-daug{
+   font-family: Architects Daughter !important;
+ }
+
+ .news-img-div-scalable{
+     @apply mb-5 hover:cursor-pointer overflow-hidden max-w-max lg:w-full lg:h-48
+ 
+  }
+ .news-img-img-scalable{
+   @apply hover:scale-125 hover:opacity-50 transition duration-500
+}
+
+.font-features{
+   @apply  text-4xl text-white font-extrabold
+}
+
+.link-page{
+@apply   bg-zinc-800 rounded-full h-10 w-10 text-xs
+}
+
+.link-page-hover{
+ @apply  hover:bg-pantone-2736 
+}
+
+
+.link-next-prev{
+   @apply bg-zinc-800 rounded-2xl h-9 w-12 text-xs
+}
+
+
+
+#card-grid> div{
+   @apply bg-pantone-426c
+}
+.pricing-btn{
+   @apply btn-pricing  btn-neon-blue-pricing  justify-center
+}
+
+.border-card{
+   @apply p-3 mb-1 border border-spacing-2 border-gray-700 
+}
+#blog-keys >li{
+   @apply flex items-center justify-center
+}
+
+#refreshing-para{
+   width: calc(100% - 1.75rem);
+}
+#refreshing-img{
+   width: calc(100% - 1.75rem);
+}

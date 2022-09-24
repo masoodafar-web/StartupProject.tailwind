@@ -1,0 +1,23 @@
+
+<!--gallery-->
+<div class="max-w-[48rem]  mx-auto ">
+        <div class="relative max-h-[36rem] -mt-7 pb-[75%]" >
+     
+                <div class="top-[45%] absolute  invisible  w-full flex justify-start" x-intersect.half="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
+                    <img src="/img/team-mosaic-02.jpg" alt="" class="w-[42%]">
+                </div>
+
+                <div class="top-0 absolute invisible w-full flex justify-center" x-intersect.half="sleep(100).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+                    <img src="/img/team-mosaic-01.jpg" alt="" class="w-[78%] ">
+                </div> 
+
+               <div class="absolute top-[8%] invisible w-full flex justify-end" x-intersect.half="sleep(200).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+                    <img src="/img/team-mosaic-03.jpg" alt="" class="w-[32%]">
+                </div>
+
+                <div class="absolute bottom-0 left-[56%]  w-full invisible" x-intersect.half="sleep(300).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })">
+                    <img src="/img/team-mosaic-04.jpg" alt="" class="w-[25%] ">
+                </div>
+
+        </div>
+    </div>

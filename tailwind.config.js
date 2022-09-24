@@ -3,6 +3,12 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontSize: {
+        '2xl':"1.5rem"
+      },
+      width: {
+        '125': '31.25rem',
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -26,9 +32,10 @@ module.exports = {
         'pantone-7465c':'#3cbfae',
         'pantone-7473c':'#16a794',
        'pantone-426c': '#25282c',
+       'pantone-7479c': '#00ce7d',
+       'pantone-7731c': '#09a668',
         'white-grey': '#D9E0EA',
-
-  
+        
       },
       container: {
         padding: '2rem',
@@ -46,7 +53,10 @@ module.exports = {
       },
       letterSpacing: {
         "m-wide": '.01em'
-      }
+      },
+      boxshadow3xl:{
+        '3xl':':50px 40px 10px',
+      },
     },
   },
   plugins: [],

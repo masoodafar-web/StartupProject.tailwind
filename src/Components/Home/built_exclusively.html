@@ -1,11 +1,11 @@
 <!-- home-content-first -->
 <div class="text-center font-bold max-w-3xl mx-auto pb-20">
 
-    <h2 x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
+    <h2 x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')"
         class="text-white-grey text-[2.5rem] mb-4 invisible">
         Built exclusively for you
     </h2>
-    <p x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
+    <p x-intersect.full="$el.classList.add('fade-up');$el.classList.remove('invisible')"
         class="text-cadet-grey text-xl invisible">Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit laborum — semper quis lectus nulla.
@@ -14,10 +14,10 @@
 </div>
 
 <!-- home-content-second -->
-<div class="grid grid-cols-3 mx-auto gap-x-8 border-b border-cadet-grey pb-20 ">
+<div class="grid grid-cols-3 mx-auto gap-x-8 ">
 
     <!-- first colmun -->
-    <div x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
+    <div x-intersect.full="$el.classList.add('fade-up'); $el.classList.remove('invisible');"
         class="invisible items-center flex flex-col relative">
         <!-- line -->
         <div class="h-1 border-b border-dashed border-white-grey absolute line-exclusively"></div>
@@ -36,7 +36,7 @@
         </p>
     </div>
     <!-- second colmun -->
-    <div x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
+    <div x-intersect.full="sleep(300).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })"
         class="invisible items-center flex flex-col relative">
 
         <!-- line -->
@@ -51,7 +51,7 @@
         </p>
     </div>
     <!-- third colmun -->
-    <div x-intersect.half="$el.classList.add('fade-up');$el.classList.remove('invisible')"
+    <div x-intersect.full="sleep(600).then(() => {$el.classList.add('fade-up'); $el.classList.remove('invisible'); })"
         class="invisible items-center flex flex-col ">
         <span x-init="$el.innerHTML=(await axios.get('Components/Home/Svgs/built_exclusively/tcSvg.html')).data"></span>
 
