@@ -16,27 +16,27 @@
 
                 </li>
                 <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer"
-                    x-on:click="link2=true,link1=false,link3=false,link4=false,link5=false" ">What is Open PRO
-                    <span class="absolute items-center ml-2 "
+                    x-on:click="link2=true,link1=false,link3=false,link4=false,link5=false,arrow2=true" >What is Open PRO
+                    <span class="absolute items-center ml-2" x-show="arrow2"
                         x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
                     </span>
                 </li>
 
                 <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer"
-                    x-on:click="link3=true,link1=false,link2=false,link4=false,link5=false" >Open PRO plan’s features
-                    <span class="absolute items-center ml-2 "
+                    x-on:click="link3=true,link1=false,link2=false,link4=false,link5=false,arrow3=true" >Open PRO plan’s features
+                    <span class="absolute items-center ml-2 " x-show="arrow3"
                         x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
                     </span>
                 </li>
                 <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer"
-                    x-on:click="link4=true,link1=false,link2=false,link3=false,link5=false">Get started
-                    <span class="absolute items-center ml-2 "
+                    x-on:click="link4=true,link1=false,link2=false,link3=false,link5=false,arrow4=true">Get started
+                    <span class="absolute items-center ml-2 " x-show="arrow4"
                         x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
                     </span>
                 </li>
                 <li class="border-bottom-support py-2 hover:text-neon-blue cursor-pointer"
-                    x-on:click="link5=true,link1=false,link2=false,link3=false,link4=false">Payments FAQ’s
-                    <span class="absolute items-center ml-2 "
+                    x-on:click="link5=true,link1=false,link2=false,link3=false,link4=false,arrow5=true">Payments FAQ’s
+                    <span class="absolute items-center ml-2 " x-show="arrow5"
                         x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
                     </span>
                 </li>
