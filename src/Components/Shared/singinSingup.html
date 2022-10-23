@@ -1,5 +1,5 @@
 <div class="flex flex-col md:flex-row gap-x-4 md:justify-end md:items-center ">
-    <div class="px-3 btn text-neon-blue-hover hover:text-white justify-center z-50">Sign In</div>
-    <div class="btn btn-neon-blue text-center justify-center z-50">
+    <div  x-on:click="SignIn=true,features=false,home=false,pricing=false,about=false,blog=false,Forget=false,ContactUs=false,SignUp=false,Support404=false" class="px-3 btn text-neon-blue-hover hover:text-white justify-center z-50">Sign In</div>
+    <div  x-on:click="SignUp=true,features=false,home=false,pricing=false,about=false,blog=false,Forget=false,ContactUs=false,SignIn=false,Support404=false" class="btn btn-neon-blue text-center justify-center z-50">
         Sign Up</div>
 </div>

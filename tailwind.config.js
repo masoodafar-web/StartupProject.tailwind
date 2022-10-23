@@ -35,6 +35,10 @@ module.exports = {
        'pantone-7479c': '#00ce7d',
        'pantone-7731c': '#09a668',
         'white-grey': '#D9E0EA',
+        'light-red': '#DC2626',
+        'dark-grey': '#33363A',
+        'light-grey': '#707D86',
+        
         
       },
       container: {

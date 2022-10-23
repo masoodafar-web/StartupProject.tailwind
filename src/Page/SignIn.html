@@ -1,0 +1,76 @@
+<!-- Sign In -->
+<div id="header" class="text-center text-[3.25rem]  py-20 font-extrabold mx-auto ">
+    <h1>Welcome back. We exist to make entrepreneurship easier.</h1>
+
+</div>
+<div class="justify-center max-w-sm mx-auto">
+    <form >
+        <div class="w-full justify-center ">
+            <button class="w-full flex py-3 bg-light-red text-white items-center rounded-sm hover:opacity-75  ">
+
+                <span class="opacity-75 shrink-0 mx-4" x-init="$el.innerHTML=(await axios.get('Components/SignInUp/GoogleSvg.html')).data"></span>
+                <span class="border-r h-6 opacity-25 " aria-hidden="true"></span>
+
+                <span class="text-white text-md font-medium mx-auto ">Sign up with Google</span>
+            </button>
+        </div>
+    </form>
+    <div class="my-6 flex items-center" >
+
+        <div class="mr-3 border-t border-dotted border-dark-grey grow "
+            aria-hidden="true"></div>
+        <div class="  text-cadet-grey text-md "> Or, register with your email</div>
+        <div class="ml-3 border-t border-dotted border-dark-grey grow "
+            aria-hidden="true"></div>
+
+    </div>
+
+    <form>
+       
+        <!-- Email -->
+        <div class="w-full mb-4">Email</label>
+            <input id="email" type="email"
+                class="w-full text-light-grey px-4 py-3 rounded-sm bg-transparent border border-dark-grey"
+                placeholder="you@yourcompany.com" required="">
+
+        </div>
+        <!-- password -->
+        <div class="w-full mb-4 ">
+            <label for="password" class="block mb-1 text-sm font-medium">Password </label>
+            <input id="password" type="password"
+                class="w-full text-light-grey  px-4 py-3 rounded-sm bg-transparent border outline-8 outline-offset-8 outline-red-400 border-dark-grey"
+                placeholder="Password (at least 10 characters)" required="">
+
+        </div>
+
+        <div class="flex mb-4 justify-between">
+            <label class="items-center flex">
+                <input id="checkbox" type="checkbox" class="w-4 h-4 mr-2 text-light-grey rounded-sm bg-transparent border border-dark-grey">
+                <span class="text-cadet-grey">Keep me signed in</span>
+            </label>
+
+            <a  x-on:click="Forget=true,features=false,home=false,pricing=false,about=false,blog=false,ContactUs=false,SignIn=false,SignUp=false"  class="text-neon-blue hover:text-white-grey" href="#0">Forgot Password?</a>
+        </div>
+
+        
+
+
+
+        <div class="w-full mb-6">
+            <button class="w-full font-medium py-3 text-white bg-neon-blue hover:bg-neon-blue-hover rounded-sm ">Sign in</button>
+        </div>
+
+        <div class="text-cadet-grey text-center text-md font-medium mb-20">
+            Don’t you have an account?<a  x-on:click="SignUp=true,features=false,home=false,pricing=false,about=false,blog=false,Forget=false,ContactUs=false,SignIn=false,Support404=false" class=" ml-1 text-neon-blue-hover hover:text-white-grey" href="#0">Sign up</a>
+        </div>
+
+
+
+
+
+
+
+
+    </form>
+
+</div>
