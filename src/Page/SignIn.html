@@ -6,7 +6,7 @@
 <div class="justify-center max-w-sm mx-auto">
     <form >
         <div class="w-full justify-center ">
-            <button class="w-full flex py-3 bg-light-red text-white items-center rounded-sm hover:opacity-75  ">
+            <button class=" w-full flex py-3 bg-light-red text-white items-center rounded-sm hover:opacity-75  ">
 
                 <span class="opacity-75 shrink-0 mx-4" x-init="$el.innerHTML=(await axios.get('Components/SignInUp/GoogleSvg.html')).data"></span>
                 <span class="border-r h-6 opacity-25 " aria-hidden="true"></span>
@@ -28,7 +28,8 @@
     <form>
        
         <!-- Email -->
-        <div class="w-full mb-4">Email</label>
+        <div class="w-full mb-4">
+            <label for="Email" class="block mb-1 text-sm font-medium">Email </label>
             <input id="email" type="email"
                 class="w-full text-light-grey px-4 py-3 rounded-sm bg-transparent border border-dark-grey"
                 placeholder="you@yourcompany.com" required="">
@@ -38,7 +39,7 @@
         <div class="w-full mb-4 ">
             <label for="password" class="block mb-1 text-sm font-medium">Password </label>
             <input id="password" type="password"
-                class="w-full text-light-grey  px-4 py-3 rounded-sm bg-transparent border outline-8 outline-offset-8 outline-red-400 border-dark-grey"
+                class="w-full text-light-grey  px-4 py-3 rounded-sm bg-transparent border border-dark-grey"
                 placeholder="Password (at least 10 characters)" required="">
 
         </div>
@@ -49,7 +50,7 @@
                 <span class="text-cadet-grey">Keep me signed in</span>
             </label>
 
-            <a  x-on:click="Forget=true,features=false,home=false,pricing=false,about=false,blog=false,ContactUs=false,SignIn=false,SignUp=false"  class="text-neon-blue hover:text-white-grey" href="#0">Forgot Password?</a>
+            <a  x-on:click="Forget=true,features=false,home=false,pricing=false,about=false,blog=false,ContactUs=false,SignIn=false,SignUp=false"  class="transition duration-150 text-neon-blue hover:text-white-grey" href="#0">Forgot Password?</a>
         </div>
 
         
@@ -57,11 +58,11 @@
 
 
         <div class="w-full mb-6">
-            <button class="w-full font-medium py-3 text-white bg-neon-blue hover:bg-neon-blue-hover rounded-sm ">Sign in</button>
+            <button class="transition duration-150 w-full font-medium py-3 text-white bg-neon-blue hover:bg-neon-blue-hover rounded-sm ">Sign in</button>
         </div>
 
         <div class="text-cadet-grey text-center text-md font-medium mb-20">
-            Don’t you have an account?<a  x-on:click="SignUp=true,features=false,home=false,pricing=false,about=false,blog=false,Forget=false,ContactUs=false,SignIn=false,Support404=false" class=" ml-1 text-neon-blue-hover hover:text-white-grey" href="#0">Sign up</a>
+            Don’t you have an account?<a  x-on:click="SignUp=true,features=false,home=false,pricing=false,about=false,blog=false,Forget=false,ContactUs=false,SignIn=false,Support404=false" class="transition duration-150 ml-1 text-neon-blue-hover hover:text-white-grey" href="#0">Sign up</a>
         </div>
 
 
