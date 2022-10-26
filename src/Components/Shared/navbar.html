@@ -1,6 +1,6 @@
 ﻿
-<div  x-data="{showMenu:false}" class="flex justify-between gap-x-2 h-20 items-center relative ">
-    <div x-on:click="home=true,pricing=false,features=false" class="flex justify-start" x-init="$el.innerHTML=(await axios.get('Components/Shared/Svgs/logoSvg.html')).data">
+<div  x-data="{showMenu:false}" class="flex justify-between gap-x-2 h-20 items-center relative  ">
+    <div x-on:click="home=true,features=false,pricing=false,about=false,blog=false,ContactUs=false,SignIn=false,SignUp=false,Forget=false,Support404=false" class="cursor-pointer flex justify-start" x-init="$el.innerHTML=(await axios.get('Components/Shared/Svgs/logoSvg.html')).data">
        
     </div>
    <div class="hidden md:block" x-init="$el.innerHTML=(await axios.get('Components/Shared/menus.html')).data">

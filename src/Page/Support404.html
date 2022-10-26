@@ -1,0 +1,21 @@
+<!-- 404 -->
+<div class="text-center mx-auto max-w-3xl" x-intersect.full="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
+    <!-- 404 img -->
+    <div id="404-img" class=" inline-flex relative mt-20 mb-8">
+        <img class=" rounded-full" width="196" height="196" src="/img/404.jpg" alt="404">
+        <span class="opacity-75 shrink-0 mx-4" x-init="$el.innerHTML=(await axios.get('Components/Support/Support404Svg.html')).data"></span>
+        
+    </div>
+    <!--404 content -->
+    <div id="404-content" x-intersect.full="$el.classList.add('fade-up'); $el.classList.remove('invisible');">
+        <h1 class="text-white-grey text-4xl md:text-5xl text-center mb-4 font-extrabold ">Uh oh. That page doesn’t
+            exist.</h1>
+        <p class="mb-20 text-cadet-grey text-center text-lg">Head to our <a
+                x-on:click="home=true,features=false,pricing=false,about=false,blog=false,ContactUs=false,SignIn=false,SignUp=false,Forget=false,Support404=false"
+                class="text-neon-blue-hover hover:text-white-grey" href="#0">homepage</a> that does exist, or try
+            double-checking the
+            URL.
+        </p>
+    </div>
+
+</div>
