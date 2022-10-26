@@ -1029,16 +1029,12 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.mr-5 {
-  margin-right: 1.25rem;
-}
-
 .mb-0 {
   margin-bottom: 0px;
 }
 
-.mt-0 {
-  margin-top: 0px;
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
 .block {
@@ -2180,20 +2176,16 @@ video {
   outline-width: 0px;
 }
 
-.outline-8 {
-  outline-width: 8px;
-}
-
-.outline-offset-8 {
-  outline-offset: 8px;
-}
-
-.outline-red-400 {
-  outline-color: #f87171;
-}
-
 .outline-neon-blue-hover {
   outline-color: #4b4acf;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition-\[left\2c top\] {
@@ -2214,16 +2206,12 @@ video {
   transition-duration: 150ms;
 }
 
-.transition {
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .delay-100 {
   transition-delay: 100ms;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
 }
 
 .duration-700 {
@@ -2236,14 +2224,6 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-.duration-150 {
-  transition-duration: 150ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
 }
 
 /* @import url(https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;500;600;700;800;900&display=fallback); */
