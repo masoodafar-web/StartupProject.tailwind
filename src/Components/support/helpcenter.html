@@ -1,4 +1,3 @@
-
 <!--helpcenter-->
 
 <div class="grid grid-cols-1 w-full mx-auto space-y-20 mt-32"
@@ -7,38 +6,53 @@
         <div class="w-3/12">
             <h1 class="text-xl text-white border-bottom-gray-support py-2">Choose a category</h1>
             <ul class=" text-sm text-gray-700">
-                <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer "
-                    x-on:click="link1=true,link2=false,link3=false,link4=false,link5=false,arrow1=true">Frequently Asked Questions
+                <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer flex items-center justify-between"
+                    x-on:mouseleave="arrow1=false" x-on:mouseover="arrow1=true"
+                    x-on:click="link1=true,link2=false,link3=false,link4=false,link5=false,arrow1=true">Frequently Asked
+                    Questions
 
-                    <span class="absolute items-center ml-2 " x-show="arrow1"
+                    <span class=" stroke-neon-blue" x-show="arrow1"
                         x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
                     </span>
 
                 </li>
-                <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer"
-                    x-on:click="link2=true,link1=false,link3=false,link4=false,link5=false,arrow2=true" >What is Open PRO
-                    <span class="absolute items-center ml-2" x-show="arrow2"
+                <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer flex items-center justify-between"
+                    x-on:mouseleave="arrow2=false" x-on:mouseover="arrow2=true"
+                    x-on:click="link2=true,link1=false,link3=false,link4=false,link5=false,arrow2=true">What is Open PRO
+
+                    <span class=" stroke-neon-blue" x-show="arrow2"
                         x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
                     </span>
+
                 </li>
 
-                <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer"
-                    x-on:click="link3=true,link1=false,link2=false,link4=false,link5=false,arrow3=true" >Open PRO plan’s features
-                    <span class="absolute items-center ml-2 " x-show="arrow3"
+                <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer flex items-center justify-between"
+                    x-on:mouseleave="arrow3=false" x-on:mouseover="arrow3=true"
+                    x-on:click="link3=true,link1=false,link2=false,link4=false,link5=false,arrow3=true">Open PRO plan’s
+                    features
+
+                    <span class=" stroke-neon-blue" x-show="arrow3"
                         x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
                     </span>
+
                 </li>
-                <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer"
+                <li class="border-bottom-support py-2  hover:text-neon-blue cursor-pointer flex items-center justify-between"
+                    x-on:mouseleave="arrow4=false" x-on:mouseover="arrow4=true"
                     x-on:click="link4=true,link1=false,link2=false,link3=false,link5=false,arrow4=true">Get started
-                    <span class="absolute items-center ml-2 " x-show="arrow4"
+
+                    <span class=" stroke-neon-blue" x-show="arrow4"
                         x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
                     </span>
+
                 </li>
-                <li class="border-bottom-support py-2 hover:text-neon-blue cursor-pointer"
+                <li class="border-bottom-support py-2 hover:text-neon-blue cursor-pointer flex items-center justify-between"
+                    x-on:mouseleave="arrow5=false" x-on:mouseover="arrow5=true"
                     x-on:click="link5=true,link1=false,link2=false,link3=false,link4=false,arrow5=true">Payments FAQ’s
-                    <span class="absolute items-center ml-2 " x-show="arrow5"
+
+                    <span class=" stroke-neon-blue" x-show="arrow5"
                         x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
                     </span>
+
                 </li>
             </ul>
 
@@ -51,7 +65,7 @@
                     Asked Questions </h1>
                 <p class="py-10">Last updated -<span class="text-neon-blue">June 30, 2020</span></p>
 
-                <p class="text-white text-xl ">How can I use Open PRO without registration?</p>
+                <p class="text-white text-xl ">How can I use Open PRO without registration?  1</p>
                 <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut
                     labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
@@ -89,7 +103,7 @@
                 </h1>
                 <p class="py-10">Last updated -<span class="text-neon-blue">June 30, 2020</span></p>
 
-                <p class="text-red-500 text-xl ">How can I use Open PRO without registration?</p>
+                <p class="text-red-500 text-xl ">How can I use Open PRO without registration?  2</p>
                 <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut
                     labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>
@@ -126,7 +140,7 @@
                     features </h1>
                 <p class="py-10">Last updated -<span class="text-neon-blue">June 30, 2020</span></p>
 
-                <p class="text-yellow-400 text-xl">How can I use Open PRO without registration?</p>
+                <p class="text-yellow-400 text-xl">How can I use Open PRO without registration?  3</p>
                 <p class="text-gray-500  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut
                     labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum.</p>

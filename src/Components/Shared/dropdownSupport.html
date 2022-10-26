@@ -1,13 +1,16 @@
 <ul class="space-y-2">
-    <li class=" hover:text-neon-blue-hover"
+    <!-- <li class=" hover:text-neon-blue-hover"
         x-on:click="about=false,home=false,features=false,pricing=false,blog=false,contactus=true">Contact us </li>
-    <li class=" hover:text-neon-blue-hover"
-        x-on:click="about=false,home=false,features=false,pricing=false,blog=false,helpcenter=true">Help Center</li>
-    <li class=" hover:text-neon-blue-hover"
+        <li class=" hover:text-neon-blue-hover"
         x-on:click="about=false,home=false,features=false,pricing=false,blog=false,404=true">404</li>
-</ul>
-<ul class="space-y-2">
-    <li x-on:click="ContactUs=true,features=false,home=false,pricing=false,about=false,blog=false,Forget=false,SignIn=false,SignUp=false,Support404=false" class="transition duration-150 hover:text-neon-blue-hover cursor-pointer">Contact us</li>
-    <li class="transition duration-150 hover:text-neon-blue-hover cursor-pointer">Help Center</li>
-    <li x-on:click="Support404=true,ContactUs=false,features=false,home=false,pricing=false,about=false,blog=false,Forget=false,SignIn=false,SignUp=false" class="transition duration-150 hover:text-neon-blue-hover cursor-pointer">404</li>
+    </ul>
+    <ul class="space-y-2"> -->
+        <li x-on:click="ContactUs=true,features=false,home=false,pricing=false,about=false,blog=false,Forget=false,SignIn=false,SignUp=false,Support404=false,helpcenter=false" 
+        class="transition duration-150 hover:text-neon-blue-hover cursor-pointer">Contact us</li>
+
+        <li class=" transition duration-150 hover:text-neon-blue-hover cursor-pointer"
+            x-on:click="helpcenter=true,about=false,home=false,features=false,pricing=false,blog=false,Forget=false,SignIn=false,SignUp=false,Support404=false,ContactUs=false">Help Center</li>
+
+    <li x-on:click="Support404=true,ContactUs=false,features=false,home=false,pricing=false,about=false,blog=false,Forget=false,SignIn=false,SignUp=false,helpcenter=false" 
+    class="transition duration-150 hover:text-neon-blue-hover cursor-pointer">404</li>
 </ul>

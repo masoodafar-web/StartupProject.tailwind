@@ -4,9 +4,10 @@
         <h1 class="text-3xl font-bold space-y-10">Open positions</h1>
 
         <div class="border-bottom-raisin-black relative">
-            <a href="" class="flex  mt-5  ">
-                <h1 class="text-pantone-2736 text-xl   font-bold mr-auto hover:text-white">Lead Product Designer</h1>
-                <span class="fill-neon-blue"
+            <a href="" class="flex  mt-5 group ">
+                <h1 class="text-pantone-2736 text-xl   font-bold mr-auto group-hover:text-white">Lead Product Designer
+                </h1>
+                <span class="group-hover:stroke-white stroke-neon-blue"
                     x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
                 </span>
             </a>
@@ -35,13 +36,13 @@
 
 
         <div class="border-bottom-raisin-black relative">
-            <a href="" class="flex  mt-5  ">
-                <h1 class="text-pantone-2736 text-xl   font-bold mr-auto hover:text-white">Front-end Engineer</h1>
-                <span class="fill-neon-blue"
+
+            <a href="" class="flex  mt-5 group ">
+                <h1 class="text-pantone-2736 text-xl   font-bold mr-auto group-hover:text-white">Front-end Engineer</h1>
+                <span class="group-hover:stroke-white stroke-neon-blue"
                     x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
                 </span>
             </a>
-
             <p class="text-cadet-grey mt-4 leading-6">You'll be joing the Experience Design Team as a Lead Product
                 Designer.
                 You'll interface daily with developers - encouraging and advancing best practices in software.
@@ -63,17 +64,14 @@
             </div>
 
         </div>
-
-
-
         <div class="border-bottom-raisin-black relative">
-            <a href="" class="flex  mt-5  ">
-                <h1 class="text-pantone-2736 text-xl   font-bold mr-auto hover:text-white">Product Manager</h1>
-                <span class="fill-neon-blue"
+
+            <a href="" class="flex  mt-5 group ">
+                <h1 class="text-pantone-2736 text-xl   font-bold mr-auto group-hover:text-white">Product Manager</h1>
+                <span class="group-hover:stroke-white stroke-neon-blue"
                     x-init="$el.innerHTML=(await axios.get('Components/About/svg/arrowpositionSvg.html')).data">
                 </span>
             </a>
-
             <p class="text-cadet-grey mt-4 leading-6">You'll be joing the Experience Design Team as a Lead Product
                 Designer.
                 You'll interface daily with developers - encouraging and advancing best practices in software.
@@ -95,15 +93,7 @@
             </div>
 
         </div>
-
-
-
-
-
-
 
     </div>
 
-
-    
 </div>
